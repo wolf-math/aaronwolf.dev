@@ -6,27 +6,24 @@ import HomePage from './pages/homepage/homepage.page';
 import Blog from './pages/blog/blog.page';
 import Portfolio from './pages/portfolio/portfolio.page';
 
-
 import './App.css';
 
 class App extends React.Component {
   constructor() {
     super();
-
     this.state = [];
-    
   }
 
   render() {
     return (
-      <div>
-        <navbar />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/blog' component={Blog} />
-          <Route path='/portfolio' component={Portfolio} />
-        </Switch>
-      </div>
+        <div>
+          <navbar />
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route path='/blog' component={Blog} />
+            <Route path='/portfolio' component={Portfolio} />
+          </Switch>
+        </div>
     );
   }
 }
