@@ -1,22 +1,34 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/navbar/navbar.component';
+import navbar from './components/navbar/navbar.component';
+import HomePage from './pages/homepage/homepage.page';
+import Blog from './pages/blog/blog.page';
+import Portfolio from './pages/portfolio/portfolio.page';
+
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/blog' component={Blog} />
-        <Route exact path='/projects' component={Projects} />
-      </Switch>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = [];
+    
+  }
+
+  render() {
+    return (
+      <div>
+        <navbar />
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/portfolio' component={Portfolio} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
-  
