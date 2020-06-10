@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Portfolio = () => (
+const About = () => (
     <div>
 
 
     </div>
 )
 
-export default Portfolio;
+export default About;
