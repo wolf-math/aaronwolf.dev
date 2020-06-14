@@ -5,11 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./assets/background.jpg);
+  background-image: url(./assets/background1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  
 }
 
+h1 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h3 {
+  font-family: 'Source Code Pro', monospace;
+}
 
 
 code {
