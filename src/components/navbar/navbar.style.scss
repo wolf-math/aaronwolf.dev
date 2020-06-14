@@ -1,5 +1,15 @@
-navbar {
-    background-color: black;
-    color: white;
+.navbar {
     display: flex;
+
+    #home {
+        width: 5%;
+        height: auto;
+
+    }
+    .option {
+        color: white;
+        text-decoration: none;
+        font-family: Roboto;
+        padding: 10px;
+    }
 }

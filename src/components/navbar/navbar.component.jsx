@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import {ReactComponent as Logo } from '../../assets/wolf-logo_D5.png';
+import logo from '../../assets/wolf-logo_D5.png';
 
 import './navbar.style.scss';
 
-const navbar = () => (
+const Navbar = () => (
     <div className='navbar'>
         <Link className='logo-container' to  ='/'>
-            <Logo className='logo' />
+            <img id='home' src={logo} alt="Logo" />
         </Link>
         <div className='options'>
             <Link className='option' to='/projects'>
@@ -20,10 +20,8 @@ const navbar = () => (
             <Link className='option' to='/blog'>
                 Blog
             </Link>
-
         </div>
-
     </div>
 );
 
-export default navbar;
+export default Navbar;
