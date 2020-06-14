@@ -7,9 +7,12 @@ import './navbar.style.scss';
 
 const Navbar = () => (
     <div className='navbar'>
-        <Link className='logo-container' to  ='/'>
-            <img id='home' src={logo} alt="Logo" />
-        </Link>
+        <div className="navlogo">
+            <Link className='logo-container' to  ='/'>
+                <img id='home' src={logo} alt="Logo" />
+            </Link>
+        </div>
+
         <div className='options'>
             <Link className='option' to='/projects'>
                 Projects
@@ -20,6 +23,10 @@ const Navbar = () => (
             <Link className='option' to='/blog'>
                 Blog
             </Link>
+        </div>
+        
+        <div className="socialmedia">
+
         </div>
     </div>
 );
