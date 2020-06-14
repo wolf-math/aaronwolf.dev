@@ -10,7 +10,7 @@ const HomePage = () => (
             <img id='logo' src={logo} alt="Logo" />;
             <div className="title">
                 <h1>Aaron Wolf</h1>
-                <h3>front end developer</h3>
+                <h3>web developer</h3>
             </div>
         </div>
 
