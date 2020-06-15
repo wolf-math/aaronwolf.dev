@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import logo from '../../assets/wolf-logo_D5.png';
@@ -24,7 +24,7 @@ const Navbar = () => (
                 Blog
             </Link>
         </div>
-        
+
         <div className="socialmedia">
 
         </div>

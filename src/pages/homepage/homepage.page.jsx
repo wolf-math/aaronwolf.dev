@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
 import './homepage.style.scss';
 
@@ -14,16 +15,8 @@ const HomePage = () => (
                     <h3>web developer</h3>
                 </div>
             </div>
-            <i class="fas fa-chevron-down" id="more"></i>
+            <FaChevronDown id="more" />
         </div>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1>
-        <h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1><h1>Aaron Wolf</h1>
     </div>
 )
 
