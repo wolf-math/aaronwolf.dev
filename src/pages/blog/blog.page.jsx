@@ -1,10 +1,20 @@
 import React from 'react';
 
-const Blog = () => (
-    <div>
+import Navbar from '../../components/navbar/navbar.component'
+import { render } from '@testing-library/react';
 
-
-    </div>
-)
+class Blog extends React.Component {
+    constructor() {
+        super();
+        this.state = [];
+      }
+    render(){
+        return (
+            <div>
+                <Navbar />
+            </div>
+        )
+    }
+}
 
 export default Blog;

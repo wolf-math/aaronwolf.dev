@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/wolf-logo_D5.png';
+// import logo from '../../assets/wolf-logo_D5.png';
 
 import './navbar.style.scss';
 
 const Navbar = () => (
     <div className='navbar'>
-        <div className="navlogo">
-            <Link className='logo-container' to  ='/'>
-                <img id='home' src={logo} alt="Logo" />
-            </Link>
-        </div>
 
-        <div className='options'>
+        {/* <Link id='navlogo' to  ='/'>
+            <img id='lowgo' src={logo} alt="Logo" />
+        </Link> */}
+
+        <div id='options'>
+            <Link className='option' to='/'>
+                Home
+            </Link>
             <Link className='option' to='/projects'>
                 Projects
             </Link>

@@ -16,6 +16,19 @@ const HomePage = () => (
                 </div>
             </div>
             <FaChevronDown id="more" />
+
+            <div id="pages">
+                <div id="projects">
+                    
+                </div>
+                <div id="Blog">
+
+                </div>
+                <div id="Teacher Site">
+
+                </div>
+
+            </div>
         </div>
     </div>
 )

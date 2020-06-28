@@ -1,17 +1,32 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 10px;
     position: fixed; 
     top: 0;
 
-    #home {
-        width: 5%;
-        height: auto;
+    #navlogo {
 
+        padding-left: 20px;
+
+        &:hover {
+            filter: drop-shadow(2px 2px 2px grey);
+        }
     }
+
+    #lowgo {
+        height: 5%;
+        width: auto;
+    }
+
+
+    #options{
+        display: flex;
+        align-items: center;
+    }
+
     .option {
         color: whitesmoke;
         text-decoration: none;

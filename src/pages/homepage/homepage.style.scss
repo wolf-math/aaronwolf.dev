@@ -5,13 +5,14 @@
     margin: auto;
     padding-top: 20px;
     color: white;
-    text-shadow: 2px 2px 5px grey;
+    text-shadow: 2px 2px 2px grey;
     align-items: center;
     justify-content: center;
 
     #logo {
         width: 20%;
         height: auto;
+        filter: drop-shadow(2px 2px 2px grey);
         padding: 15px;
         border-right-style: solid;
         border-right-width: 3px;
