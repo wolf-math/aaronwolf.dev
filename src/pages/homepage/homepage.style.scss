@@ -32,8 +32,8 @@
         }
     }
 
-    .main-content {
-        height: 90vh;
+    .greeting {
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -49,6 +49,17 @@
     #more {
         font-size: 72px;
         padding-top: 30px;
+    }
+
+    #pages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .linkLogo {
+            height: 10%;
+            width: auto;
+        }
     }
 }
 
