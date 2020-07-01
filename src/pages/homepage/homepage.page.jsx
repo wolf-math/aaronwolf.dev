@@ -8,6 +8,7 @@ import './homepage.style.scss';
 import logo from '../../assets/wolf-logo_D5.png';
 import teacher from '../../assets/wolf-logo_D6.png';
 import pixel from '../../assets/logo_pixel_large.png'
+import robot_wolf from '../../assets/robot_logo.png';
 
 const HomePage = () => (
     <>
@@ -24,17 +25,21 @@ const HomePage = () => (
         </div>
 
         <div id="pages">       
-            <Link to='/projects' className="page" id="projects">
+            <Link className="page" id="projects" to='/projects'>
                 <img className='linkLogo' src={teacher} alt="Projects" />
-                <h2 className="description">Projects</h2>
+                <h3 className="description">Projects</h3>
+            </Link>
+            <Link className="page" id="about" to='/about'>
+                <img className='linkLogo' src={robot_wolf} alt="About" />
+                <h3 className="description">About</h3>
             </Link>
             <Link className="page" id="blog" to='/blog'>
-                <img className='linkLogo' src={pixel} alt="Blog" />;
-                <h2 className="description">Blog</h2>
+                <img className='linkLogo' src={pixel} alt="Blog" />
+                <h3 className="description">Blog</h3>
             </Link>
             <Link className="page" id="teacher" to='/teacher'>
-                <img className='linkLogo' src={teacher} alt="Projects" />;
-                <h2 className="description">Teacher</h2>
+                <img className='linkLogo' src={teacher} alt="Projects" />
+                <h3 className="description">Teacher</h3>
             </Link>
         </div>   
     </div>

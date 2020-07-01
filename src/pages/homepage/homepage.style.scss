@@ -60,7 +60,7 @@
         width: 95%;
         padding-bottom: 50vh;
         padding-top: 50vh;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
 
         .page {
@@ -68,40 +68,26 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: white;
+            font-family: Roboto;
+            text-decoration: none;
+            filter: blur(1px);
+            transition: 0.2s;
+            
+            &:hover {
+                filter: drop-shadow(2px 2px 2px grey);
+                transition: 0.2s;
+                transform: scale(1.1);
+                filter: blur(0px);
 
-            .description{
-                opacity: 1;
-
-                &:hover {
-                    opacity: 1;
-                    transition: 1s;
-                }
             }
 
             .linkLogo {
                 height: 250px;
                 width: auto;
-
-                &:hover {
-                    filter: drop-shadow(2px 2px 2px grey);
-                    transition: 1s;
-                    transform: scale(1.1);
-
-                }
+                transition: 0.2s;
             }
         }
-
-        // #projects {
-        //     background-color: yellow;
-        // }
-
-        // #blog {
-        //     background-color: blue;
-        // }
-
-        // #teacher {
-        //     background-color: red;
-        // }
     }
 }
 
