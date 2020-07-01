@@ -9,6 +9,7 @@ import logo from '../../assets/wolf-logo_D5.png';
 import teacher from '../../assets/wolf-logo_D6.png';
 
 const HomePage = () => (
+    <>
     <div className='homepage'>
         <div className="greeting">
             <div className="mainlogo">
@@ -28,21 +29,21 @@ const HomePage = () => (
                     Projects
                 </Link>
             </div>
-            <div id="Blog">        
+            <div id="blog">        
                 <Link to='/blog'>
                     {/* <img className='linkLogo' src={blog} alt="Blog" />; */}
                     Blog
                 </Link>
             </div>
-            <div id="Teacher Site">
+            <div id="teacher">
                 <Link to='/teacher'>
-                    {/* <img className='linkLogo' src={teacher} alt="Projects" />; */}
+                    <img className='linkLogo' src={teacher} alt="Projects" />;
                     Teacher Site
                 </Link>
             </div>
-        </div>
-        
+        </div>   
     </div>
+    </>
 )
 
 export default HomePage;
