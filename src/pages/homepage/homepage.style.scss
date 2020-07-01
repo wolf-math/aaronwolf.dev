@@ -9,7 +9,7 @@
     justify-content: center;
 
     #greeting {
-        height: 98vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,7 +17,7 @@
 
         #mainlogo {
             display: flex;
-            width: 95%;
+            width: 95vw;
             margin: auto;
             align-items: center;
             justify-content: center;
@@ -33,7 +33,7 @@
             }
             
             .title {
-                
+                margin-left: 10px;
 
                 h1 {
                     font-size: 72px;
@@ -57,8 +57,11 @@
     
     #pages {
         display: grid;
+        width: 95%;
+        padding-bottom: 50vh;
+        padding-top: 50vh;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 10px;
+        grid-column-gap: 20px;
 
         .page {
             display: flex;
@@ -66,24 +69,39 @@
             justify-content: center;
             align-items: center;
 
+            .description{
+                opacity: 1;
+
+                &:hover {
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
+
             .linkLogo {
-                height: 50px;
+                height: 250px;
                 width: auto;
-                background-color: green;
+
+                &:hover {
+                    filter: drop-shadow(2px 2px 2px grey);
+                    transition: 1s;
+                    transform: scale(1.1);
+
+                }
             }
         }
 
-        #projects {
-            background-color: yellow;
-        }
+        // #projects {
+        //     background-color: yellow;
+        // }
 
-        #blog {
-            background-color: blue;
-        }
+        // #blog {
+        //     background-color: blue;
+        // }
 
-        #teacher {
-            background-color: red;
-        }
+        // #teacher {
+        //     background-color: red;
+        // }
     }
 }
 

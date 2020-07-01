@@ -26,15 +26,15 @@ const HomePage = () => (
         <div id="pages">       
             <Link to='/projects' className="page" id="projects">
                 <img className='linkLogo' src={teacher} alt="Projects" />
-                Projects
+                <h2 className="description">Projects</h2>
             </Link>
             <Link className="page" id="blog" to='/blog'>
                 <img className='linkLogo' src={pixel} alt="Blog" />;
-                Blog
+                <h2 className="description">Blog</h2>
             </Link>
             <Link className="page" id="teacher" to='/teacher'>
-                {/* <img className='linkLogo' src={teacher} alt="Projects" />; */}
-                Teacher Site
+                <img className='linkLogo' src={teacher} alt="Projects" />;
+                <h2 className="description">Teacher</h2>
             </Link>
         </div>   
     </div>
