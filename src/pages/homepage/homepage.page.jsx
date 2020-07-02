@@ -18,7 +18,9 @@ const HomePage = () => (
                 <img id='logo' src={logo} alt="Logo" />;
                 <div className="title">
                     <h1>Aaron Wolf</h1>
-                    <h3>web developer</h3>
+                    <h3>web developer<br/>
+                    Teacher <br/>
+                    Nerd.</h3>
                 </div>
             </div>
             <FaChevronDown id="more" />
@@ -27,22 +29,23 @@ const HomePage = () => (
         <div id="pages">       
             <Link className="page" id="projects" to='/projects'>
                 <img className='linkLogo' src={teacher} alt="Projects" />
-                <h3 className="description">Projects</h3>
+                <h3 className="description typewriter">Projects.</h3>
             </Link>
             <Link className="page" id="about" to='/about'>
                 <img className='linkLogo' src={robot_wolf} alt="About" />
-                <h3 className="description">About</h3>
+                <h3 className="description typewriter">About.</h3>
             </Link>
             <Link className="page" id="blog" to='/blog'>
                 <img className='linkLogo' src={pixel} alt="Blog" />
-                <h3 className="description">Blog</h3>
+                <h3 className="description typewriter">Blog.</h3>
             </Link>
             <Link className="page" id="teacher" to='/teacher'>
                 <img className='linkLogo' src={teacher} alt="Projects" />
-                <h3 className="description">Teacher</h3>
+                <h3 className="description typewriter">Teacher.</h3>
             </Link>
-        </div>   
+        </div>
     </div>
+
     </>
 )
 
