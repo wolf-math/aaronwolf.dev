@@ -59,7 +59,7 @@
     #pages {
         display: grid;
         width: 95%;
-        padding-bottom: 50vh;
+        padding-bottom: 30vh;
         padding-top: 50vh;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 20px;
@@ -73,7 +73,7 @@
             font-family: Roboto;
             text-decoration: none;
             filter: blur(1px);
-            transition: 0.2s;
+            transition: 0.5s;
 
             // h3 {
             //     width: fit-content;
@@ -81,32 +81,32 @@
             
             &:hover {
                 filter: drop-shadow(2px 2px 2px grey);
-                transition: 0.2s;
-                transform: scale(1.1);
+                transform:scale(1.1);
+                transition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
                 filter: blur(0px);
 
-                .typewriter {
-                    overflow: hidden;
-                    border-right: .15em solid orange;
-                    white-space: nowrap; 
-                    margin: 0 auto;
-                    letter-spacing: .15em;
-                    animation: 
-                      typing 3.5s steps(40, end),
-                      blink-caret .75s step-end infinite;
-                  }
-                  
-                  /* The typing effect */
-                //   @keyframes typing {
-                //     from { width: 0 }
-                //     to { width: fit-content }
+                // .typewriter {
+                //     overflow: hidden;
+                //     border-right: .15em solid orange;
+                //     white-space: nowrap; 
+                //     margin: 0 auto;
+                //     letter-spacing: .15em;
+                //     animation: 
+                //       typing 3.5s steps(40, end),
+                //       blink-caret .75s step-end infinite;
                 //   }
                   
-                  /* The typewriter cursor effect */
-                  @keyframes blink-caret {
-                    from, to { border-color: transparent }
-                    50% { border-color: orange; }
-                  }
+                //   /* The typing effect */
+                // //   @keyframes typing {
+                // //     from { width: 0 }
+                // //     to { width: fit-content }
+                // //   }
+                  
+                //   /* The typewriter cursor effect */
+                //   @keyframes blink-caret {
+                //     from, to { border-color: transparent }
+                //     50% { border-color: orange; }
+                //   }
 
             }
 
@@ -114,6 +114,29 @@
                 height: 250px;
                 width: auto;
                 transition: 0.2s;
+            }
+        }
+    }
+
+    #icons {
+        padding-bottom: 25vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 5rem;
+
+        .icon {
+            padding-inline: 15px;
+            color: white;
+            text-decoration: none;
+            transition: 0.5s;
+
+
+            &:hover {
+                color: whitesmoke;
+                transform:scale(1.5);
+                transition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+                filter: drop-shadow(1px 1px 2px grey);
             }
         }
     }

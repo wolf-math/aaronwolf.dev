@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, FaDev, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import './homepage.style.scss';
 
@@ -18,8 +18,8 @@ const HomePage = () => (
                 <img id='logo' src={logo} alt="Logo" />;
                 <div className="title">
                     <h1>Aaron Wolf</h1>
-                    <h3>web developer<br/>
-                    Teacher <br/>
+                    <h3>web developer.<br/>
+                    Teacher.<br/>
                     Nerd.</h3>
                 </div>
             </div>
@@ -45,9 +45,12 @@ const HomePage = () => (
             </Link>
         </div>
 
-        <FontAwesomeIcon icon="coffee" />
-        <FontAwesomeIcon icon="coffee" />
-        <FontAwesomeIcon icon="coffee" />
+        <div id="icons">
+            <a href="https://dev.to/wolfmath" target="_blank"><FaDev className="icon" /></a>
+            <a href="https://www.linkedin.com/in/wolf-math/" target="_blank"><FaLinkedin className="icon" /></a>
+            <a href="https://github.com/wolf-math" target="_blank"><FaGithub className="icon" /></a>
+        </div>
+        
     </div>
 
     </>
