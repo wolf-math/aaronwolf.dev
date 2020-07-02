@@ -44,6 +44,10 @@ const HomePage = () => (
                 <h3 className="description typewriter">Teacher.</h3>
             </Link>
         </div>
+
+        <FontAwesomeIcon icon="coffee" />
+        <FontAwesomeIcon icon="coffee" />
+        <FontAwesomeIcon icon="coffee" />
     </div>
 
     </>
