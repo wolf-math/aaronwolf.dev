@@ -46,9 +46,21 @@ const HomePage = () => (
         </div>
 
         <div id="icons">
-            <a href="https://dev.to/wolfmath" target="_blank"><FaDev className="icon" /></a>
-            <a href="https://www.linkedin.com/in/wolf-math/" target="_blank"><FaLinkedin className="icon" /></a>
-            <a href="https://github.com/wolf-math" target="_blank"><FaGithub className="icon" /></a>
+            <a href="https://dev.to/wolfmath" 
+               target="_blank"
+               rel="noopener noreferrer">
+                <FaDev className="icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/wolf-math/" 
+               target="_blank"
+               rel="noopener noreferrer">
+                <FaLinkedin className="icon" />
+            </a>
+            <a href="https://github.com/wolf-math" 
+               target="_blank"
+               rel="noopener noreferrer">
+                <FaGithub className="icon" />
+            </a>
         </div>
         
     </div>
