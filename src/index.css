@@ -5,9 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./assets/background1.jpg);
-  background-repeat: repeat-y;
-  /* background-repeat: no-repeat; */
   background-size: 100%;
   background-color: darkgrey;
   

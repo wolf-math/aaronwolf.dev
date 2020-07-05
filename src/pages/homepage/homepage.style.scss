@@ -1,3 +1,9 @@
+.home-background {
+    background-image: url(../../assets/background1.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
 .homepage {
     display: flex;
     flex-direction: column;
@@ -74,39 +80,12 @@
             text-decoration: none;
             filter: blur(1px);
             transition: 0.5s;
-
-            // h3 {
-            //     width: fit-content;
-            // }
             
             &:hover {
                 filter: drop-shadow(2px 2px 2px grey);
                 transform:scale(1.1);
                 transition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
                 filter: blur(0px);
-
-                // .typewriter {
-                //     overflow: hidden;
-                //     border-right: .15em solid orange;
-                //     white-space: nowrap; 
-                //     margin: 0 auto;
-                //     letter-spacing: .15em;
-                //     animation: 
-                //       typing 3.5s steps(40, end),
-                //       blink-caret .75s step-end infinite;
-                //   }
-                  
-                //   /* The typing effect */
-                // //   @keyframes typing {
-                // //     from { width: 0 }
-                // //     to { width: fit-content }
-                // //   }
-                  
-                //   /* The typewriter cursor effect */
-                //   @keyframes blink-caret {
-                //     from, to { border-color: transparent }
-                //     50% { border-color: orange; }
-                //   }
 
             }
 
@@ -130,13 +109,14 @@
             color: white;
             text-decoration: none;
             transition: 0.5s;
+            filter: drop-shadow(1px 1px 2px grey);
 
 
             &:hover {
                 color: whitesmoke;
                 transform:scale(1.5);
                 transition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-                filter: drop-shadow(1px 1px 2px grey);
+                filter: drop-shadow(0);
             }
         }
     }
