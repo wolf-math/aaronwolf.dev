@@ -18,7 +18,7 @@ const HomePage = () => (
                     <img id='logo' src={logo} alt="Logo" />
                     <div className="title">
                         <h1>Aaron Wolf</h1>
-                        <h3>web developer.<br/>
+                        <h3>Web Developer.<br/>
                         Teacher.<br/>
                         Nerd.</h3>
                     </div>
@@ -47,18 +47,18 @@ const HomePage = () => (
 
             <div id="icons">
                 <a href="https://dev.to/wolfmath" 
-                target="_blank"
-                rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     <FaDev className="icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/wolf-math/" 
-                target="_blank"
-                rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     <FaLinkedin className="icon" />
                 </a>
                 <a href="https://github.com/wolf-math" 
-                target="_blank"
-                rel="noopener noreferrer">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     <FaGithub className="icon" />
                 </a>
             </div>

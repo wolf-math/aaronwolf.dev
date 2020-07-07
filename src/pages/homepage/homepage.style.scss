@@ -127,10 +127,14 @@
 
     .title {
         margin-left: 0;
-        
+
         h1 {
             font-size: 10px;
         }
+    }
+
+    .page {
+        filter: blur(0px);
     }
     
 }
