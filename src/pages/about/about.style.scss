@@ -7,8 +7,31 @@
     align-items: center;
     justify-content: center;
 
+    a {
+        color: white;
+        text-decoration: underline white;
+    }
+
     .languages {
         display: flex;
         justify-content: space-between;
+        
+        h5 {
+            line-height: 0;
+        }
+
+        .language {
+            padding: 20px;
+
+            .skills {
+                list-style-type: none;
+                list-style: none;
+                padding-left: 0;
+            
+                li {
+                    line-height: 1.5em;
+                }
+            }
+        }
     }
 }

@@ -4,7 +4,9 @@ import './about.style.scss';
 
 import Navbar from '../../components/navbar/navbar.component';
 
-import { FaTerminal, FaPython, FaReact, FaLinux, FaMicrochip } from 'react-icons/fa';
+import { FaTerminal, FaPython, FaReact, 
+    FaLinux, FaMicrochip, FaWordpress, FaDatabase, 
+    FaDesktop, FaHtml5, FaCss3, FaFire, FaGem, FaSass } from 'react-icons/fa';
 
 const About = () => (
     <>
@@ -13,7 +15,7 @@ const About = () => (
             <h1>About <span class='highlight'>Aaron</span></h1>
 
             <div class="container">
-                <p>I am a full stack developer with a focus on front end. I'm a quick learner who can work on a wide variety of projects, and I'm able to work on existing projects or creating new projects from scratch.</p>
+                <p>I am a full stack developer with a focus on front end, looking for a job in Israel.</p>
 
                 <p>Prior to being a full stack developer I was a high school Computer Programming and Mathematics teacher in Cleveland, Ohio. I used to teach mathematics from a programming perspective with the help of my favorite tool, the <a href="http://www.raspberrypi.org">Raspberry Pi</a>.</p>
 
@@ -25,32 +27,33 @@ const About = () => (
             <h1><FaTerminal /> Coding <span class="highlight">Languages</span></h1>
             <div class="languages">
                 <div class="language">
-                    <h5><FaReact /> Web Dev</h5>
+                    <h3><FaDesktop /> Web Dev</h3>
                     <ul class="skills">
-                        <li>ReactJS</li>
-                        <li>Firebase</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>SASS/SCSS</li>
-                        <li>Ruby on Rails</li>
+                        <li><FaReact /> ReactJS</li>
+                        <li><FaFire /> Firebase</li>
+                        <li><FaHtml5 /> HTML5</li>
+                        <li><FaCss3 /> CSS3</li>
+                        <li><FaSass /> SASS/SCSS</li>
+                        <li><FaGem /> Ruby on Rails</li>
                     </ul>
                 </div>
                 <div class="language">
-                    <h5><FaPython /> Python</h5>
+                    <h3><FaPython /> Python</h3>
                     <ul class="skills">
                         <li>Django</li>
                         <li>MatPlotLib</li>
                         <li>NumPy</li>
                         <li>SimPy</li>
                         <li>Pandas</li>
-                        <li>Jupyter</li>
+                        <li>Jupyter Notebook</li>
                     </ul>
                 </div>
                 <div class="language">
-                    <h5><FaMicrochip /> Other Technologies</h5>
+                    <h3><FaMicrochip /> Other Technologies</h3>
                     <ul class="skills nobullet">
-                        <li><i class="fab fa-wordpress"></i> Wordpress</li>
-                        <li><FaLinux />Linux</li>
-                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><FaWordpress /> Wordpress</li>
+                        <li><FaLinux /> Linux</li>
+                        <li><FaDatabase /> SQL</li>
                     </ul>
                 </div>
             </div>
