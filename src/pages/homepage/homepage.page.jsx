@@ -27,9 +27,9 @@ const HomePage = () => (
             </div>
 
             <div id="pages">       
-                <Link className="page" id="projects" to='/projects'>
-                    <img className='linkLogo' src={teacher} alt="Projects" />
-                    <h3 className="description typewriter">Projects.</h3>
+                <Link className="page" id="portfolio" to='/portfolio'>
+                    <img className='linkLogo' src={teacher} alt="Portfolio" />
+                    <h3 className="description typewriter">Portfolio.</h3>
                 </Link>
                 <Link className="page" id="about" to='/about'>
                     <img className='linkLogo' src={robot_wolf} alt="About" />

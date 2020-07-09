@@ -12,8 +12,8 @@ const Navbar = () => (
             <Link className='option' to='/'>
                 Home
             </Link>
-            <Link className='option' to='/projects'>
-                Projects
+            <Link className='option' to='/portfolio'>
+                Portfolio
             </Link>
             <Link className='option' to='/about'>
                 About
@@ -23,11 +23,7 @@ const Navbar = () => (
             </Link>
             {/* <Link className='option' to='/teacher'>
                 Teacher Site
-            </Link> */}
-            <a className='option' href='http://wolf-math.com/'>
-                Teacher Site
-            </a>
-            
+            </Link> */}            
         </div>
 
         <div className="socialmedia">
