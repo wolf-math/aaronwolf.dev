@@ -4,7 +4,7 @@ import './about.style.scss';
 
 import Navbar from '../../components/navbar/navbar.component';
 
-import { FaTerminal, FaPython, FaReact, FaLinux } from 'react-icons/fa';
+import { FaTerminal, FaPython, FaReact, FaLinux, FaMicrochip } from 'react-icons/fa';
 
 const About = () => (
     <>
@@ -46,7 +46,7 @@ const About = () => (
                     </ul>
                 </div>
                 <div class="language">
-                    <h5><i class="fas fa-microchip"></i> Other Technologies</h5>
+                    <h5><FaMicrochip /> Other Technologies</h5>
                     <ul class="skills nobullet">
                         <li><i class="fab fa-wordpress"></i> Wordpress</li>
                         <li><FaLinux />Linux</li>
