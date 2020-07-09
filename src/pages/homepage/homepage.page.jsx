@@ -39,10 +39,12 @@ const HomePage = () => (
                     <img className='linkLogo' src={pixel} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
                 </Link>
-                <Link className="page" id="teacher" to='/teacher'>
-                    <img className='linkLogo' src={teacher} alt="Projects" />
+                <a className="page" id="teacher" href='http://wolf-math.com/'
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img className='linkLogo' src={teacher} alt="teacher" />
                     <h3 className="description typewriter">Teacher.</h3>
-                </Link>
+                </a>
             </div>
 
             <div id="icons">
