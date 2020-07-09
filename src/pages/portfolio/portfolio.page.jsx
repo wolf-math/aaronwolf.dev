@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Portfolio = () => (
-    <div>
+class Portfolio extends React.Component {
+    constructor() {
+        super();
+        this.state = [];
+    }
+    render(){
+        return(
 
-
-    </div>
-)
+        )
+    }
+}
 
 export default Portfolio;
