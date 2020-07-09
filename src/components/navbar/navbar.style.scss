@@ -1,43 +1,28 @@
 .navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 10px;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 1em;
-    position: fixed; 
-    top: 0;
+    
+    .option {
+        font-family: Roboto;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: large;
 
-    #navlogo {
+        &:hover {
+            text-shadow: 2px 2px 2px grey;
+        }
+    }
 
-        padding-left: 20px;
+    .icon {
+        color: white;
+        padding: 10px;
+        font-size: x-large;
 
         &:hover {
             filter: drop-shadow(2px 2px 2px grey);
         }
     }
-
-    #lowgo {
-        height: 5%;
-        width: auto;
-    }
-
-
-    #options{
-        display: flex;
-        align-items: center;
-    }
-
-    .option {
-        color: whitesmoke;
-        text-decoration: none;
-        font-family: Roboto;
-        padding: 10px;
-        font-size: large;
-
-        &:hover{
-            text-shadow: 2px 2px 5px grey;
-        }
-    }
-
 }

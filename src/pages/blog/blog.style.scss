@@ -4,4 +4,16 @@
     padding-top: 50px;
     color: white;
 
+    li {
+        padding-top: 10px;
+    }
+
+    a {
+        text-decoration: underline white;
+        color: white;
+        
+        &:hover {
+            text-shadow: 3px 3px 5px grey;
+        }
+    }
 }

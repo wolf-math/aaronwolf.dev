@@ -8,11 +8,6 @@ import './navbar.style.scss';
 
 const Navbar = () => (
     <div className='navbar'>
-
-        {/* <Link id='navlogo' to  ='/'>
-            <img id='lowgo' src={logo} alt="Logo" />
-        </Link> */}
-
         <div id='options'>
             <Link className='option' to='/'>
                 Home
@@ -20,12 +15,19 @@ const Navbar = () => (
             <Link className='option' to='/projects'>
                 Projects
             </Link>
-            <Link className='option' to='/teacher'>
-                Teacher Site
+            <Link className='option' to='/about'>
+                About
             </Link>
             <Link className='option' to='/blog'>
                 Blog
             </Link>
+            {/* <Link className='option' to='/teacher'>
+                Teacher Site
+            </Link> */}
+            <a className='option' href='http://wolf-math.com/'>
+                Teacher Site
+            </a>
+            
         </div>
 
         <div className="socialmedia">

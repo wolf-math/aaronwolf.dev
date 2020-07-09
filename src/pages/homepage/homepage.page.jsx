@@ -64,9 +64,7 @@ const HomePage = () => (
                     <FaGithub className="icon" />
                 </a>
             </div>
-            
         </div>
-
     </div>
 )
 
