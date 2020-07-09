@@ -9,6 +9,7 @@ import logo from '../../assets/wolf-logo_D5.png';
 import teacher from '../../assets/wolf-logo_D6.png';
 import pixel from '../../assets/logo_pixel_large.png'
 import robot_wolf from '../../assets/robot_logo.png';
+import hardhat from '../../assets/hardhat_logo.png';
 
 const HomePage = () => (
     <div className="home-background">
@@ -28,7 +29,7 @@ const HomePage = () => (
 
             <div id="pages">       
                 <Link className="page" id="portfolio" to='/portfolio'>
-                    <img className='linkLogo' src={teacher} alt="Portfolio" />
+                    <img className='linkLogo' src={hardhat} alt="Portfolio" />
                     <h3 className="description typewriter">Portfolio.</h3>
                 </Link>
                 <Link className="page" id="about" to='/about'>
