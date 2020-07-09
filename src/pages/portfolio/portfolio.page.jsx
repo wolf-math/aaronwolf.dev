@@ -13,7 +13,7 @@ class Portfolio extends React.Component {
         return(
             <>
             <Navbar />
-                
+                <h1>Under Construction</h1>
             </>
         )
     }
