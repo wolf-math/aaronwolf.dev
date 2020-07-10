@@ -133,8 +133,11 @@
         }
     }
 
-    .page {
-        filter: blur(0px);
+    .homepage{
+        #pages {
+            .page {
+                filter: blur(0);
+            }
+        }
     }
-    
 }
