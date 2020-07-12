@@ -120,7 +120,7 @@
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 750px) {
     #logo {
         display: none;
     }
@@ -139,5 +139,11 @@
                 filter: blur(0);
             }
         }
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .homepage {
+        width: 1500px;
     }
 }

@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: center;
 
+    p {
+        // font-size: larger;
+    }
+
     a {
         color: white;
         text-decoration: underline white;
@@ -15,6 +19,7 @@
     .languages {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         
         h5 {
             line-height: 0;
@@ -33,5 +38,11 @@
                 }
             }
         }
+    }
+}
+
+@media all and (min-width: 2000px) {
+    #about {
+        width: 1500px;
     }
 }

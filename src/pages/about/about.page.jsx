@@ -21,7 +21,8 @@ const About = () => (
 
                 <p>You can find most of my lesson plans on this website (or Github). They are in the form of LaTeX code and they are, slowly but surely, being converted into Jupyter Notebooks</p>
 
-                <p>Are you looking for a developer? I'm for hire!</p>
+                <p>Are you looking for a developer? I'm for hire! Reach out <a href = "mailto: contact@aaronwolf.dev">contact@aaronwolf.dev</a>
+</p>
             </div>
 
             <h1><FaTerminal /> Coding <span class="highlight">Languages</span></h1>

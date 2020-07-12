@@ -11,3 +11,9 @@
 h1 {
     
 }
+
+@media all and (min-width: 2000px) {
+    #portfolio {
+        width: 1500px;
+    }
+}
