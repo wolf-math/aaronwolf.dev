@@ -39,6 +39,7 @@
             
             .title {
                 margin-left: 10px;
+                font-family: "Source Code Pro";
 
                 h1 {
                     font-size: 72px;
@@ -52,6 +53,7 @@
                 }
             }
         }
+
         #more {
             justify-content: center;
             font-size: 72px;
@@ -73,7 +75,7 @@
             justify-content: center;
             align-items: center;
             color: white;
-            font-family: Roboto;
+            font-family: "Source Code Pro";
             text-decoration: none;
             filter: blur(1px);
             transition: 0.5s;
@@ -96,13 +98,13 @@
 
     #icons {
         padding-bottom: 25vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-evenly;
         font-size: 5rem;
-
+        
         .icon {
-            padding-inline: 15px;
+            padding: 15px;
             color: white;
             text-decoration: none;
             transition: 0.5s;
