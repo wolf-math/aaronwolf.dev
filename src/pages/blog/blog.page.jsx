@@ -1,6 +1,11 @@
 import React from 'react';
 
-import './blog.style.scss'
+import './blog.style.scss';
+
+import twitter from '../../assets/twitter.png';
+import devto from '../../assets/devto.png';
+import blogger from '../../assets/blogger.png';
+
 
 import Navbar from '../../components/navbar/navbar.component';
 
@@ -16,14 +21,26 @@ class Blog extends React.Component {
         return (
             <>
                 <Navbar />
+                <h1>Ok, not a blog, but stuff I've written elsewhere</h1>
                 <div id="main-content">
-                    <h1>Just some stuff I've written</h1>
-                    
-                    <ul>
-                        <li id="dev"><a href="https://dev.to/wolfmath">dev.to</a> <FaDev className="icon" /></li>
-                        <li id="blog"><a href="http://www.roboticwolf.com">Blogger</a> <FaBlogger className="icon" /></li>
-                        <li id="twitter"><a href="http://twitter.com/wolf_math">Twitter</a> <FaTwitter className="icon" /> </li>
-                    </ul>
+                    <div id="dev">
+                        <a href="https://dev.to/wolfmath">
+                            <img className='linkLogo' src={devto} alt="Dev.to" />
+                        </a> 
+                        {/* <FaDev className="icon" /> */}
+                    </div>
+                    <div id="blog">
+                        <a href="http://www.roboticwolf.com">
+                            <img className='linkLogo' src={blogger} alt="Blogger" />
+                        </a>
+                        {/* <FaBlogger className="icon" /> */}
+                    </div>
+                    <div id="twitter">
+                        <a href="http://twitter.com/wolf_math">
+                            <img className='linkLogo' src={twitter} alt="Twitter" />
+                        </a>
+                        {/* <FaTwitter className="icon" /> */}
+                    </div>
                 </div>
             </>
         )
