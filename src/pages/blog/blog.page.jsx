@@ -17,8 +17,8 @@ class Blog extends React.Component {
             <>
                 <Navbar />
                 <div id="main-content">
-                    <h1>Under Construction</h1>
-                    <p>In the meantime, feel free to check out some of my writing on </p>
+                    <h1>Just some stuff I've written</h1>
+                    
                     <ul>
                         <li id="dev"><a href="https://dev.to/wolfmath">dev.to</a> <FaDev className="icon" /></li>
                         <li id="blog"><a href="http://www.roboticwolf.com">Blogger</a> <FaBlogger className="icon" /></li>
