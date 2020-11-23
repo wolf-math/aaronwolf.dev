@@ -21,8 +21,14 @@ class Blog extends React.Component {
         return (
             <>
                 <Navbar />
-                <h1>Ok, not a blog, but stuff I've written elsewhere</h1>
+                <h1 id="head">Ok, not a blog, but stuff I've written elsewhere</h1>
                 <div id="main-content">
+                    <div id="twitter">
+                        <a href="http://twitter.com/wolf_math">
+                            <img className='linkpage' src={twitter} alt="Twitter" />
+                        </a>
+                        {/* <FaTwitter className="icon" /> */}
+                    </div>
                     <div id="dev">
                         <a href="https://dev.to/wolfmath">
                             <img className='linkpage' src={devto} alt="Dev.to" />
@@ -34,12 +40,6 @@ class Blog extends React.Component {
                             <img className='linkpage' src={blogger} alt="Blogger" />
                         </a>
                         {/* <FaBlogger className="icon" /> */}
-                    </div>
-                    <div id="twitter">
-                        <a href="http://twitter.com/wolf_math">
-                            <img className='linkpage' src={twitter} alt="Twitter" />
-                        </a>
-                        {/* <FaTwitter className="icon" /> */}
                     </div>
                 </div>
             </>
