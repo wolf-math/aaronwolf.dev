@@ -4,15 +4,14 @@
 }
 
 #main-content {
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
     padding: 50px;
     color: white;
     width: 90vw;
-    
-
+    display: -webkit-flex; display: -ms-flexbox; display: flex; overflow: hidden;
 
     li {
         padding-top: 10px;
@@ -28,10 +27,11 @@
     }
 
     .linkpage {
-        padding: 10px;
+        margin: 10px;
         border-radius: 10px;
         width: 25vw;
-
+        height: auto;
+        flex: 1;
     }
 }
 
