@@ -21,7 +21,7 @@ class Blog extends React.Component {
         return (
             <>
                 <Navbar />
-                <h1>Ok, not a blog, but stuff I've written elsewhere</h1>
+                <h1 id="head">Ok, not a blog, but stuff I've written elsewhere</h1>
                 <div id="main-content">
                     <div id="dev">
                         <a href="https://dev.to/wolfmath">
