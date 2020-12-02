@@ -9,8 +9,8 @@ import blogger from '../../assets/blogger.png';
 
 import Navbar from '../../components/navbar/navbar.component';
 
-import { render } from '@testing-library/react';
-import { FaDev, FaTwitter, FaBlogger } from 'react-icons/fa';
+// import { render } from '@testing-library/react';
+// import { FaDev, FaTwitter, FaBlogger } from 'react-icons/fa';
 
 class Blog extends React.Component {
     constructor() {
