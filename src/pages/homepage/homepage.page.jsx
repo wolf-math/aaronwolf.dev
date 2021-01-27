@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Link as Scroll } from 'react-scroll';
 
 import { FaChevronDown, FaDev, FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -11,7 +12,9 @@ import pixel from '../../assets/logo_pixel_large.png'
 import robot_wolf from '../../assets/robot_logo.png';
 import hardhat from '../../assets/hardhat_logo.png';
 
+
 const HomePage = () => (
+
     <div className="home-background">
         <div className='homepage'>
             <div id="greeting">
@@ -24,7 +27,9 @@ const HomePage = () => (
                         Nerd.</h3>
                     </div>
                 </div>
-                <FaChevronDown id="more" />
+                <Scroll activeClass="active" to="pages" spy={true} smooth={true}>
+                    <FaChevronDown id="more" /> 
+                </Scroll>
             </div>
 
             <div id="pages">       
