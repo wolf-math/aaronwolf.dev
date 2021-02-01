@@ -1,14 +1,16 @@
-import react from 'react';
+import React from 'react';
 
 import './project.scss'
 
-const project = () => {
-
-    <div>
-        <h2>title</h2>
-        <p>content</p>
+const Project = (props) => {
+    return (
+    <div className="project">
+        < a href={props.url}>
+        <h2>{props.title}</h2>
+        <p>{props.description}</p>
+        </a>
     </div>
-
+    )
 }
 
-export default project;
+export default Project;

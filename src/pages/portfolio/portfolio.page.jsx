@@ -1,28 +1,37 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
+import axios from 'axios'; 
 
 import './portfolio.style.scss'
 
 import Navbar from '../../components/navbar/navbar.component';
+import Project from '../../components/project/project';
 
-class Portfolio extends React.Component {
-    constructor() {
-        super();
-        this.state = [];
-    }
-    render(){
-        return(
-            <>
+const Portfolio = () => {
+
+    const [repos, setRepos] = useState([])
+
+    useEffect(() => {
+        axios.get("https://api.github.com/users/wolf-math/repos").then((res)=>{
+          setRepos(res.data.filter(repo => repo.fork===false));
+        })
+      }, [])
+
+    
+
+    return(
+        <>
             <Navbar />
-            <div id="portfolio">
-                <h1>Under Construction</h1>
-                <p>In the mean time, feel free to check out my <a href="http://github.com/wolf-math"
-                target="_blank"
-                rel="noopener noreferrer">
-                    GitHub</a> page!</p>
-            </div>
-            </>
-        )
-    }
+            
+            <h1>Portfolio</h1>
+            {repos.map(repo => <Project key={repo.id} 
+                title={repo.name} 
+                description={repo.description} 
+                url={repo.html_url}
+                
+                />)}
+
+        </>
+    )
 }
 
 export default Portfolio;
