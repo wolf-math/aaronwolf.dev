@@ -1,8 +1,13 @@
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
+}
+
+
+h3 {
+    margin-bottom: 50px;
 }

@@ -12,9 +12,11 @@ const Portfolio = () => {
 
     useEffect(() => {
         axios.get("https://api.github.com/users/wolf-math/repos").then((res)=>{
-          setRepos(res.data.filter(repo => repo.fork===false));
+          setRepos(res.data.filter(repo => repo.fork===false).sort((a,b) => a.updated_at - b.updated_at));
         })
       }, [])
+
+      console.log(repos)
 
     return(
         <>
@@ -22,9 +24,12 @@ const Portfolio = () => {
             
             <h1>Portfolio</h1>
 
+            <h3>A list of the projects I have on GitHub.</h3>
+
             <div className="projects">
-                {/* <Project title="This is a really really really really long title" description="One time I hired a monekey to take notes for me in class. I would just sit there with my mind a complete blank while the monkey would scribble on little pieces of paper" /> */}
-            {repos.map(repo => <Project key={repo.id} 
+
+            {repos.map(repo => <Project 
+                key={repo.id} 
                 title={repo.name} 
                 description={repo.description}
                 language={repo.language}
