@@ -8,15 +8,9 @@ import About from './pages/about/about.page';
 
 import './App.css';
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = [];
-  }
-
-  render() {
+const App = () => {
     return (
-        <div>
+        <div className="app">
           <Switch>
             <Route exact path='/' component={HomePage} />
             <Route path='/blog' component={Blog} />
@@ -25,7 +19,6 @@ class App extends React.Component {
           </Switch>
         </div>
     );
-  }
 }
 
 export default App;
