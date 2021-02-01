@@ -16,20 +16,19 @@ const Portfolio = () => {
         })
       }, [])
 
-    
-
     return(
         <>
             <Navbar />
             
             <h1>Portfolio</h1>
+
+            <div className="projects">
             {repos.map(repo => <Project key={repo.id} 
                 title={repo.name} 
                 description={repo.description} 
                 url={repo.html_url}
-                
                 />)}
-
+            </div>
         </>
     )
 }

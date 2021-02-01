@@ -1,19 +1,4 @@
-#portfolio {
-    color: white;
-    text-align: center;
-    
-    a {
-        color: white;
-        text-decoration: underline white;
-    }
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-
-h1 {
-    
-}
-
-// @media all and (min-width: 2000px) {
-//     #portfolio {
-//         width: 1500px;
-//     }
-// }
