@@ -15,16 +15,14 @@ const Project = (props) => {
         props.description))
 
     return (
-        <a href={props.url} target="_blank" rel="noopener noreferrer">
-
-            <Card style={{ width: '18rem' }}>
-                <Card.Title>{title}</Card.Title>
-                <Card.Subtitle>{props.language}</Card.Subtitle>
-                <Card.Text>{description}</Card.Text>
-            </Card> 
-
-            
-        </a>
+            <Card style={{ width: '18rem' }} bg='dark' text='light'>
+                <Card.Header><Card.Subtitle>{props.language}</Card.Subtitle></Card.Header>
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{description}</Card.Text>
+                    <Card.Link href={props.url} target="_blank" rel="noopener noreferrer">Link</Card.Link>
+                </Card.Body>
+            </Card>
     )
 }
 

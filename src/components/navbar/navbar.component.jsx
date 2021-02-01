@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import logo from '../../assets/wolf-logo_D5.png';
 import { FaDev, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 import './navbar.style.scss';

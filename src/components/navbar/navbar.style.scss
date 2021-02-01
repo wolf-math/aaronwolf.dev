@@ -15,14 +15,14 @@
             text-shadow: 2px 2px 2px grey;
         }
     }
+}
 
-    .icon {
-        color: white;
-        padding: 10px;
-        font-size: x-large;
+.icon {
+    color: white;
+    padding: 10px;
+    font-size: 3em;
 
-        &:hover {
-            filter: drop-shadow(2px 2px 2px grey);
-        }
+    &:hover {
+        filter: drop-shadow(2px 2px 2px grey);
     }
 }
