@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './project.scss';
+import Card from 'react-bootstrap/Card';
 
 const Project = (props) => {
 
@@ -15,13 +16,14 @@ const Project = (props) => {
 
     return (
         <a href={props.url} target="_blank" rel="noopener noreferrer">
-            <div className="project">
-                <div className="title">
-                    <h3>{title}</h3>
-                </div>
-                    <p>{description}</p>
-                    <p>Written in {props.language}</p>
-            </div>
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Title>{title}</Card.Title>
+                <Card.Subtitle>{props.language}</Card.Subtitle>
+                <Card.Text>{description}</Card.Text>
+            </Card> 
+
+            
         </a>
     )
 }
