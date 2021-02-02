@@ -22,11 +22,14 @@ const About = () => (
                 </Container>
                 <img className="head" src={head} alt="headshot" />
             </Jumbotron>
+
+            <div className="content">
             
-            <p>I am a full stack developer with a flair for front end. I have experience working in Ruby on Rails, Django, and ReactJS. I enjoy making websites more visually appealing. As a former computer programming teacher in a diverse multicultural public school, I am comfortable understanding and working with people of all types of backgrounds. My favorite tool for teaching computer programming is the <a href="http://www.raspberrypi.org">Raspberry Pi</a>.</p>
-            <p>You can find all of my lesson plans on GitHub. They are in the form of LaTeX code and they are, slowly but surely, being converted into Jupyter Notebooks</p>
-            <p>Are you looking for a developer? I'm for hire! Reach out <a href = "mailto: contact@aaronwolf.dev">contact@aaronwolf.dev</a></p>
-            
+                <p>I am a full stack developer with a flair for front end. I have experience working in Ruby on Rails, Django, and ReactJS. I enjoy making websites more visually appealing. As a former computer programming teacher in a diverse multicultural public school, I am comfortable understanding and working with people of all types of backgrounds. My favorite tool for teaching computer programming is the <a href="http://www.raspberrypi.org">Raspberry Pi</a>.</p>
+                <p>You can find all of my lesson plans on GitHub. They are in the form of LaTeX code and they are, slowly but surely, being converted into Jupyter Notebooks</p>
+                <p>Are you looking for a developer? I'm for hire! Reach out <a href = "mailto: contact@aaronwolf.dev">contact@aaronwolf.dev</a></p>
+
+            </div>            
 
             <h1><FaTerminal /> Coding <span className="highlight">Languages</span></h1>
             <div className="languages">
