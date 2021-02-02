@@ -20,6 +20,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        .skilltitle {
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
         
         h5 {
             line-height: 0;

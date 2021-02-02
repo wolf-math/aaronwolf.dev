@@ -1,0 +1,4 @@
+{
+    "prettier.packageManager": "yarn",
+    "eslint.packageManager": "yarn"
+}

@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import axios from 'axios'; 
 
 import './portfolio.style.scss'
+import {Jumbotron, Container} from 'react-bootstrap';
 
 import Navbar from '../../components/navbar/navbar.component';
 import Project from '../../components/project/project';
@@ -21,10 +22,16 @@ const Portfolio = () => {
     return(
         <>
             <Navbar />
-            
-            <h1>Portfolio</h1>
 
-            <h3>A list of the projects I have on GitHub.</h3>
+            <Jumbotron fluid>
+            <Container>
+                <h1>Portfolio</h1>
+
+                <h3>A list of the projects I have on GitHub.</h3>
+   
+            </Container>
+            </Jumbotron>
+            
 
             <div className="projects">
 

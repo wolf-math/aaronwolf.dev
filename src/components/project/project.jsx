@@ -20,7 +20,7 @@ const Project = (props) => {
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
-                    <Card.Link href={props.url} target="_blank" rel="noopener noreferrer">Link</Card.Link>
+                    {/* <Card.Link href={props.url} target="_blank" rel="noopener noreferrer">Link</Card.Link> */}
                 </Card.Body>
             </Card>
     )

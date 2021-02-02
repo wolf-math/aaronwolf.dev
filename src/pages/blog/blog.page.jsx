@@ -1,50 +1,46 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
+import axios from 'axios';
 
 import './blog.style.scss';
-
-import twitter from '../../assets/twitter.png';
-import devto from '../../assets/devto.png';
-import blogger from '../../assets/blogger.png';
-
+import {Jumbotron, Container} from 'react-bootstrap';
 
 import Navbar from '../../components/navbar/navbar.component';
+import Post from '../../components/post/post.component'
 
-// import { render } from '@testing-library/react';
-// import { FaDev, FaTwitter, FaBlogger } from 'react-icons/fa';
+const Blog = () => {
 
-class Blog extends React.Component {
-    constructor() {
-        super();
-        this.state = [];
-      }
-    render(){
-        return (
-            <>
-                <Navbar />
-                <h1 id="head">Ok, not a blog, but stuff I've written elsewhere</h1>
-                <div id="main-content">
-                    <div id="twitter">
-                        <a href="http://twitter.com/wolf_math">
-                            <img className='linkpage' src={twitter} alt="Twitter" />
-                        </a>
-                        {/* <FaTwitter className="icon" /> */}
-                    </div>
-                    <div id="dev">
-                        <a href="https://dev.to/wolfmath">
-                            <img className='linkpage' src={devto} alt="Dev.to" />
-                        </a> 
-                        {/* <FaDev className="icon" /> */}
-                    </div>
-                    <div id="blog">
-                        <a href="http://www.roboticwolf.com">
-                            <img className='linkpage' src={blogger} alt="Blogger" />
-                        </a>
-                        {/* <FaBlogger className="icon" /> */}
-                    </div>
-                </div>
-            </>
-        )
-    }
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        axios.get("https://dev.to/api/articles?username=wolfmath").then((res)=>{
+          setPosts(res.data);
+        })
+      }, [])
+
+
+    return (
+        <>
+            <Navbar />
+
+            <Jumbotron fluid>
+            <Container>
+                
+                <h1 id="head">My Writings from the Practical Dev.</h1>
+   
+            </Container>
+            </Jumbotron>
+
+            {posts.map(post => <Post key={post.id} 
+                    title={post.title}
+                    cover={post.cover_image}
+                    content={post.description}
+                    url={post.url}
+                    timestamp={post.readable_publish_date}
+                    tags={post.tag_list}
+                />)}
+        </>
+    )
 }
+
 
 export default Blog;
