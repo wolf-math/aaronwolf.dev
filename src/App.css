@@ -16,3 +16,9 @@ h2, h3 {
 a {
     text-decoration: none;
 }
+
+.foot {
+    text-align: center;
+    color: darkgray;
+    margin: 20px;
+}

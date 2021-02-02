@@ -17,8 +17,6 @@ const Portfolio = () => {
         })
       }, [])
 
-      console.log(repos)
-
     return(
         <>
             <Navbar />
@@ -27,7 +25,7 @@ const Portfolio = () => {
             <Container>
                 <h1>Portfolio</h1>
 
-                <h3>A list of the projects I have on GitHub.</h3>
+                <h3>My GitHub projects.</h3>
    
             </Container>
             </Jumbotron>
@@ -41,6 +39,8 @@ const Portfolio = () => {
                 description={repo.description}
                 language={repo.language}
                 url={repo.html_url}
+                created={repo.created_at}
+                updated={repo.updated_at}
                 />)}
             </div>
         </>
