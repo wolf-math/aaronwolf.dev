@@ -16,7 +16,7 @@ const Post = (props) => {
                 {props.tags.map(tag => <Badge variant="secondary">{tag}</Badge>)}
                 
                 <h1 className="articletitle">{props.title}</h1>
-                <p className="articlecontent">{props.content} <a href={props.url}>Read on</a></p>
+                <p className="articlecontent">{props.content} <a href={props.url} target="_blank" rel="noopener noreferrer">Read on</a></p>
                 <p className="timestamp">{props.timestamp}</p>
 
                 
