@@ -22,15 +22,6 @@ const Post = (props) => {
                 
             </div>
         </div>
-
-        // <Card style={{width: '18rem'}}>
-        //     <Card.Img  variant="top" src={props.cover} />
-        //     <Card.Body>
-        //         <Card.Title>{props.title}</Card.Title>
-        //         <Card.Text>{props.content}</Card.Text>
-        //         <Card.Link href={props.url}>Read on</Card.Link>
-        //     </Card.Body>
-        // </Card>
     )
 }
 
