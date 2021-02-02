@@ -17,6 +17,7 @@ const App = () => {
             <Route path='/portfolio' component={Portfolio} />
             <Route path='/about' component={About} />
           </Switch>
+          <p className="foot">© Aaron Wolf</p>
         </div>
     );
 }

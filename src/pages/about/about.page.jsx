@@ -2,7 +2,7 @@ import React from 'react';
 
 import './about.style.scss';
 
-import head from './../../assets/head-shot.JPG';
+import head from './../../assets/headshot.jpg';
 
 import Navbar from '../../components/navbar/navbar.component';
 

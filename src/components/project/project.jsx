@@ -14,13 +14,20 @@ const Project = (props) => {
         props.description.slice(0, 80) + "..." : 
         props.description))
 
+    const created = new Date(props.created)
+    const dateCreated = `${created.getFullYear()}-${created.getMonth()+1}-${created.getDate()}`;
+
+    const updated = new Date(props.updated);
+    const dateUpdated = `${updated.getFullYear()}-${updated.getMonth()+1}-${updated.getDate()}`;
+
     return (
-            <Card style={{ width: '18rem' }} bg='dark' text='light'>
+            <Card style={{ width: '45rem' }} bg='light' text='dark'>
                 <Card.Header><Card.Subtitle>{props.language}</Card.Subtitle></Card.Header>
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>
+                    <a href={props.url} target="_blank" rel="noopener noreferrer"><Card.Title>{title}</Card.Title></a>
                     <Card.Text>{description}</Card.Text>
-                    {/* <Card.Link href={props.url} target="_blank" rel="noopener noreferrer">Link</Card.Link> */}
+                    <p className="timestamp">updated: {dateUpdated}</p>
+                    <p className="timestamp">created: {dateCreated}</p>
                 </Card.Body>
             </Card>
     )
