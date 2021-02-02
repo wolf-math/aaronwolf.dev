@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 
-import { FaChevronDown, FaDev, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaChevronDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 import './homepage.style.scss';
 
@@ -68,6 +68,9 @@ const HomePage = () => (
                    target="_blank"
                    rel="noopener noreferrer">
                     <FaGithub className="icon" />
+                </a>
+                <a href = "mailto: contact@aaronwolf.dev">
+                    <FaEnvelope className="icon" />
                 </a>
             </div>
         </div>

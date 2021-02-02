@@ -1,19 +1,17 @@
-#portfolio {
-    color: white;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1, h3 {
     text-align: center;
-    
-    a {
-        color: white;
-        text-decoration: underline white;
-    }
 }
 
-h1 {
-    
+
+h3 {
+    margin-bottom: 50px;
 }
 
-// @media all and (min-width: 2000px) {
-//     #portfolio {
-//         width: 1500px;
-//     }
-// }
+.jumbotron {
+    background-color: transparent !important;
+}
