@@ -6,6 +6,8 @@ import { FaChevronDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-ic
 
 import './homepage.style.scss';
 
+import Navbar from '../../components/navbar/navbar.component';
+
 import logo from '../../assets/wolf-logo_D5.png';
 import teacher from '../../assets/wolf-logo_D6.png';
 import pixel from '../../assets/logo_pixel_large.png'
@@ -16,6 +18,7 @@ import hardhat from '../../assets/hardhat_logo.png';
 const HomePage = () => (
 
     <div className="home-background">
+        {/* <Navbar /> */}
         <div className='homepage'>
             <div id="greeting">
                 <div id="mainlogo">
@@ -33,16 +36,16 @@ const HomePage = () => (
             </div>
 
             <div id="pages">       
-                <Link className="page" id="portfolio" to='/portfolio'>
-                    <img className='linkLogo' src={hardhat} alt="Portfolio" />
-                    <h3 className="description typewriter">Portfolio.</h3>
-                </Link>
                 <Link className="page" id="about" to='/about'>
                     <img className='linkLogo' src={robot_wolf} alt="About" />
                     <h3 className="description typewriter">About.</h3>
                 </Link>
+                <Link className="page" id="portfolio" to='/portfolio'>
+                    <img className='linkLogo' src={hardhat} alt="Portfolio" />
+                    <h3 className="description typewriter">Portfolio.</h3>
+                </Link>
                 <Link className="page" id="blog" to='/blog'>
-                    <img className='linkLogo' src={pixel} alt="Blog" />
+                    <img className='linkLogo' src={logo} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
                 </Link>
                 <a className="page" id="teacher" href='http://wolf-math.com/'
@@ -51,6 +54,10 @@ const HomePage = () => (
                     <img className='linkLogo' src={teacher} alt="teacher" />
                     <h3 className="description typewriter">Teacher.</h3>
                 </a>
+                <Link className="page" id="contact" to='/contact'>
+                    <img className='linkLogo' src={pixel} alt="Contact" />
+                    <h3 className="description typewriter">Contact.</h3>
+                </Link>
             </div>
 
             <div id="icons">
@@ -69,9 +76,9 @@ const HomePage = () => (
                    rel="noopener noreferrer">
                     <FaGithub className="icon" />
                 </a>
-                <a href = "mailto: contact@aaronwolf.dev">
+                <Link to="/contact">
                     <FaEnvelope className="icon" />
-                </a>
+                </Link>
             </div>
         </div>
     </div>

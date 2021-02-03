@@ -14,6 +14,8 @@ const Project = (props) => {
         props.description.slice(0, 80) + "..." : 
         props.description))
 
+    // use this if you want more date formatting https://www.w3schools.com/jsref/jsref_getmonth.asp
+
     const created = new Date(props.created)
     const dateCreated = `${created.getFullYear()}-${created.getMonth()+1}-${created.getDate()}`;
 
