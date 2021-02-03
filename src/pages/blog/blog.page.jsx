@@ -29,7 +29,7 @@ const Blog = () => {
    
             </Container>
             </Jumbotron>
-
+            
             {posts.map(post => <Post key={post.id} 
                     title={post.title}
                     cover={post.cover_image}
