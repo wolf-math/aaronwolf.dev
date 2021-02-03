@@ -5,13 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./assets/background2.jpg);
-  background-repeat: repeat-y;
+
+  background-image: url(./assets/moonnight.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  background-color: darkgrey;
-  /* font-size: 24px; */
-  
+  background-color: #0e0c0f;
 }
 
 h1 {
@@ -22,7 +21,6 @@ h1 {
 h3 {
   font-family: 'Source Code Pro', monospace;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

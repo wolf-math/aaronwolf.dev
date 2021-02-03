@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 
+import './contact.style.scss'
+
 import Navbar from '../../components/navbar/navbar.component';
 import {Jumbotron, Form, Button, Alert} from 'react-bootstrap';
 
@@ -32,6 +34,7 @@ const Contact = () => {
     return (
         <>
             <Navbar />
+            <div className="contactpage">
             <Jumbotron>
                 <h1>Contact Me</h1>
             </Jumbotron>
@@ -52,6 +55,7 @@ const Contact = () => {
                     <Button as="input" type="submit" value="Send" variant="secondary" block />
                 </Form>
             }
+            </div>
         </>
     )
 }
