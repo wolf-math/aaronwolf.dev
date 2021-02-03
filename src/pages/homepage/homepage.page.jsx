@@ -45,15 +45,15 @@ const HomePage = () => (
                     <h3 className="description typewriter">Portfolio.</h3>
                 </Link>
                 <Link className="page" id="blog" to='/blog'>
-                    <img className='linkLogo' src={logo} alt="Blog" />
+                    <img className='linkLogo' src={teacher} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
                 </Link>
-                <a className="page" id="teacher" href='http://wolf-math.com/'
+                {/* <a className="page" id="teacher" href='http://wolf-math.com/'
                    target="_blank"
                    rel="noopener noreferrer">
                     <img className='linkLogo' src={teacher} alt="teacher" />
                     <h3 className="description typewriter">Teacher.</h3>
-                </a>
+                </a> */}
                 <Link className="page" id="contact" to='/contact'>
                     <img className='linkLogo' src={pixel} alt="Contact" />
                     <h3 className="description typewriter">Contact.</h3>
