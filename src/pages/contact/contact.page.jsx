@@ -1,26 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 
 import Navbar from '../../components/navbar/navbar.component';
-
-import {Jumbotron} from 'react-bootstrap';
+import {Jumbotron, Form, Button, Alert} from 'react-bootstrap';
 
 const Contact = () => {
+
+    // for success bubble
+    const [sent, setSent] = useState(false);
 
     // https://www.emailjs.com/docs/examples/reactjs/
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_ymr4mse', 'template_wv03f9o', e.target, 'user_5ckamWVH4TSVJJnehWuF3')
-        .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            ;
+        toggle();
     }
 
-    
+    const toggle = () => {
+        setSent(!sent);
+    }
+
+    const sentAlert = <Alert variant='success'>Email sent successfully </Alert>
 
     return (
         <>
@@ -28,25 +35,23 @@ const Contact = () => {
             <Jumbotron>
                 <h1>Contact Me</h1>
             </Jumbotron>
-            <form onSubmit={sendEmail}>
-                <div className="row pt-5 mx-auto">
-                    <div className="col-8 form-group mx-auto">
-                        <input type="text" className="form-control" placeholder="Name" name="name"/>
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <input type="email" className="form-control" placeholder="Email Address" name="email"/>
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <input type="text" className="form-control" placeholder="Subject" name="subject"/>
-                    </div>
-                    <div className="col-8 form-group pt-2 mx-auto">
-                        <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
-                    </div>
-                    <div className="col-8 pt-2 mx-auto">
-                        <input type="submit" className="btn btn-secondary btn-lg btn-block" value="Send Message"></input>
-                    </div>
-                </div>
-            </form>
+            {sent ? sentAlert : 
+                <Form onSubmit={sendEmail} className="col-8 pt-2 mx-auto">
+                    <Form.Group controlId="emailForm.name">
+                        <Form.Control type="text" placeholder="name" name="name" />
+                    </Form.Group>
+                    <Form.Group controlId="emailForm.email">
+                        <Form.Control type="email" placeholder="email" name="email" />
+                    </Form.Group>
+                    <Form.Group controlId="emailForm.subject">
+                        <Form.Control type="text" placeholder="subject" name="subject" />
+                    </Form.Group>
+                    <Form.Group controlId="emailForm.message">
+                        <Form.Control as="textarea" rows={5} palceholder="message" name="message" />
+                    </Form.Group>
+                    <Button as="input" type="submit" value="Send" variant="secondary" block />
+                </Form>
+            }
         </>
     )
 }
