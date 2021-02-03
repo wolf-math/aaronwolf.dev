@@ -6,10 +6,10 @@ import { FaChevronDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-ic
 
 import './homepage.style.scss';
 
-import Navbar from '../../components/navbar/navbar.component';
+// import Navbar from '../../components/navbar/navbar.component';
 
 import logo from '../../assets/wolf-logo_D5.png';
-import teacher from '../../assets/wolf-logo_D6.png';
+import glasses from '../../assets/wolf-logo_D6.png';
 import pixel from '../../assets/logo_pixel_large.png'
 import robot_wolf from '../../assets/robot_logo.png';
 import hardhat from '../../assets/hardhat_logo.png';
@@ -45,7 +45,7 @@ const HomePage = () => (
                     <h3 className="description typewriter">Portfolio.</h3>
                 </Link>
                 <Link className="page" id="blog" to='/blog'>
-                    <img className='linkLogo' src={teacher} alt="Blog" />
+                    <img className='linkLogo' src={glasses} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
                 </Link>
                 {/* <a className="page" id="teacher" href='http://wolf-math.com/'

@@ -1,4 +1,5 @@
 import React from 'react';
+import Roll from 'react-reveal/Roll';
 
 import './project.scss';
 import Card from 'react-bootstrap/Card';
@@ -23,6 +24,7 @@ const Project = (props) => {
     const dateUpdated = `${updated.getFullYear()}-${updated.getMonth()+1}-${updated.getDate()}`;
 
     return (
+        <Roll bottom >
             <Card style={{ width: '45rem' }} bg='light' text='dark'>
                 <Card.Header><Card.Subtitle>{props.language}</Card.Subtitle></Card.Header>
                 <Card.Body>
@@ -32,6 +34,7 @@ const Project = (props) => {
                     <p className="timestamp">created: {dateCreated}</p>
                 </Card.Body>
             </Card>
+        </Roll>
     )
 }
 
