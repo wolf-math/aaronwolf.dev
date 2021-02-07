@@ -11,8 +11,8 @@ const Project = (props) => {
 
     // truncate description. 
     const description = (props.description === null ? " " : (        
-        props.description.length > 80 ? 
-        props.description.slice(0, 80) + "..." : 
+        props.description.length > 70 ? 
+        props.description.slice(0, 70) + "..." : 
         props.description))
 
     // use this if you want more date formatting https://www.w3schools.com/jsref/jsref_getmonth.asp
@@ -25,7 +25,7 @@ const Project = (props) => {
 
     return (
         <Roll bottom >
-            <Card style={{ width: '45rem' }} bg='light' text='dark'>
+            <Card style={{ width: '60%' }} bg='dark' text='light'>
                 <Card.Header><Card.Subtitle>{props.language}</Card.Subtitle></Card.Header>
                 <Card.Body>
                     <a href={props.url} target="_blank" rel="noopener noreferrer"><Card.Title>{title}</Card.Title></a>

@@ -24,24 +24,22 @@ const Portfolio = () => {
             <Jumbotron fluid>
             <Container>
                 <h1>Portfolio</h1>
-
                 <h3>My GitHub projects.</h3>
-   
             </Container>
             </Jumbotron>
             
-
             <div className="projects">
 
-            {repos.map(repo => <Project 
-                key={repo.id} 
-                title={repo.name} 
-                description={repo.description}
-                language={repo.language}
-                url={repo.html_url}
-                created={repo.created_at}
-                updated={repo.updated_at}
-                />)}
+                {repos.map(repo => <Project 
+                    key={repo.id} 
+                    title={repo.name} 
+                    description={repo.description}
+                    language={repo.language}
+                    url={repo.html_url}
+                    created={repo.created_at}
+                    updated={repo.updated_at}
+                    />)
+                }
             </div>
         </>
     )

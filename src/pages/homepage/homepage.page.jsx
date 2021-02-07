@@ -2,11 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 
-import { FaChevronDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaAngleDoubleDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 import './homepage.style.scss';
-
-// import Navbar from '../../components/navbar/navbar.component';
 
 import logo from '../../assets/wolf-logo_D5.png';
 import glasses from '../../assets/wolf-logo_D6.png';
@@ -18,7 +16,6 @@ import hardhat from '../../assets/hardhat_logo.png';
 const HomePage = () => (
 
     <div className="home-background">
-        {/* <Navbar /> */}
         <div className='homepage'>
             <div id="greeting">
                 <div id="mainlogo">
@@ -31,7 +28,7 @@ const HomePage = () => (
                     </div>
                 </div>
                 <Scroll activeClass="active" to="pages" spy={true} smooth={true}>
-                    <FaChevronDown id="more" /> 
+                    <FaAngleDoubleDown id="more" /> 
                 </Scroll>
             </div>
 
@@ -48,12 +45,6 @@ const HomePage = () => (
                     <img className='linkLogo' src={glasses} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
                 </Link>
-                {/* <a className="page" id="teacher" href='http://wolf-math.com/'
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <img className='linkLogo' src={teacher} alt="teacher" />
-                    <h3 className="description typewriter">Teacher.</h3>
-                </a> */}
                 <Link className="page" id="contact" to='/contact'>
                     <img className='linkLogo' src={pixel} alt="Contact" />
                     <h3 className="description typewriter">Contact.</h3>

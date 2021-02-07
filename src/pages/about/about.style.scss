@@ -1,66 +1,63 @@
-#about {
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(70, 70, 70, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+
+  .jumbotron {
     display: flex;
     flex-direction: column;
-    width: 75%;
-    margin: auto;
-    color: white;
     align-items: center;
-    justify-content: center;
+  }
 
-    .jumbotron {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .head {
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid transparent;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline white;
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .skilltitle {
+      margin-bottom: 5px;
+      padding-bottom: 0;
     }
 
-    .head {
-        width: 15rem;
-        height: auto;
-        border-radius: 50%;
+    h5 {
+      line-height: 0;
     }
 
-    h1 {
-        text-align: center;
-    }
+    .language {
+      padding: 20px;
 
-    a {
-        color: white;
-        text-decoration: underline white;
-    }
+      .skills {
+        list-style-type: none;
+        list-style: none;
+        padding-left: 0;
 
-    
-    .languages {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .skilltitle {
-            margin-bottom: 5px;
-            padding-bottom: 0;
+        li {
+          line-height: 1.5em;
         }
-        
-        h5 {
-            line-height: 0;
-        }
-
-        .language {
-            padding: 20px;
-
-            .skills {
-                list-style-type: none;
-                list-style: none;
-                padding-left: 0;
-            
-                li {
-                    line-height: 1.5em;
-                }
-            }
-        }
+      }
     }
+  }
 }
-
-// @media all and (min-width: 2000px) {
-//     #about {
-//         width: 1500px;
-//     }
-// }
