@@ -13,9 +13,10 @@ const Portfolio = () => {
 
     useEffect(() => {
         axios.get("https://api.github.com/users/wolf-math/repos").then((res)=>{
-          setRepos(res.data.filter(repo => repo.fork===false).sort((a,b) => a.updated_at - b.updated_at));
+          setRepos(res.data.filter(repo => repo.fork===false).sort((a,b) => new Date(b.updated_at) - new Date(a.updated_at)));
         })
       }, [])
+
 
     return(
         <>
