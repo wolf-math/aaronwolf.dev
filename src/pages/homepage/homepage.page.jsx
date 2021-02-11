@@ -33,22 +33,22 @@ const HomePage = () => (
             </div>
 
             <div id="pages">       
-                <Link className="page" id="about" to='/about'>
+                <a className="page" id="about" href='/about'>
                     <img className='linkLogo' src={robot_wolf} alt="About" />
                     <h3 className="description typewriter">About.</h3>
-                </Link>
-                <Link className="page" id="portfolio" to='/portfolio'>
+                </a>
+                <a className="page" id="portfolio" href='/portfolio'>
                     <img className='linkLogo' src={hardhat} alt="Portfolio" />
                     <h3 className="description typewriter">Portfolio.</h3>
-                </Link>
-                <Link className="page" id="blog" to='/blog'>
+                </a>
+                <a className="page" id="blog" href='/blog'>
                     <img className='linkLogo' src={glasses} alt="Blog" />
                     <h3 className="description typewriter">Blog.</h3>
-                </Link>
-                <Link className="page" id="contact" to='/contact'>
+                </a>
+                <a className="page" id="contact" href='/contact'>
                     <img className='linkLogo' src={pixel} alt="Contact" />
                     <h3 className="description typewriter">Contact.</h3>
-                </Link>
+                </a>
             </div>
 
             <div id="icons">
