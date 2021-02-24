@@ -39,7 +39,7 @@ const Contact = () => {
                 <h1>Contact Me</h1>
             </Jumbotron>
             {sent ? sentAlert : 
-                <Form onSubmit={sendEmail} className="col-8 pt-2 mx-auto">
+                <Form onSubmit={sendEmail} className="col-8 mx-auto">
                     <Form.Group controlId="emailForm.name">
                         <Form.Control type="text" placeholder="name" name="name" />
                     </Form.Group>
