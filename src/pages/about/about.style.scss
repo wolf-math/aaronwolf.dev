@@ -6,7 +6,8 @@
   color: white;
   align-items: center;
   justify-content: center;
-  background-color: rgba(70, 70, 70, 0.7);
+  background-color: rgba(70, 70, 70, 0.2);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
   padding: 20px;
 
