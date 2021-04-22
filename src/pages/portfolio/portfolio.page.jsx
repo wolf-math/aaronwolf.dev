@@ -48,6 +48,7 @@ const Portfolio = () => {
             "id": 4,
             "name": "Cleveland Karate",
             "url": "https://clevelandshotokan.wordpress.com/",
+            "image": "",
             "github": "",
             "languages": "Wordpress"
         }
@@ -66,14 +67,8 @@ const Portfolio = () => {
             
             <Carousel>
                 <Carousel.Item interval={1000}>
-                    <h1>Hi</h1>
                     <Carousel.Caption>
-                        <Post>
-                        title="Legacy"
-                    cover=
-                    {/* content={post.description}
-                    url={post.url} */}
-                        </Post>
+                        
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
