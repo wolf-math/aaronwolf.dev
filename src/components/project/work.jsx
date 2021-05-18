@@ -18,3 +18,5 @@ const Work = (id, name, url, github, image, languages) => {
         </div>
     )
 }
+
+export default Work;

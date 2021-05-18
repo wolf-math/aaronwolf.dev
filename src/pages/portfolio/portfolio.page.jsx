@@ -6,8 +6,8 @@ import {Jumbotron, Container, Carousel} from 'react-bootstrap';
 
 import Navbar from '../../components/navbar/navbar.component';
 import Project from '../../components/project/project';
+import Work from '../../components/project/work';
 import Post from '../../components/post/post.component';
-
 
 const Portfolio = () => {
 
@@ -66,11 +66,26 @@ const Portfolio = () => {
             </Jumbotron>
             
             <Carousel>
-                <Carousel.Item interval={1000}>
-                    <Carousel.Caption>
-                        
-                    </Carousel.Caption>
-                </Carousel.Item>
+                {projects.map(project => <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={project.image}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                        <h3>{project.className}</h3>
+                        <p>{Project.languages}</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    // <Work 
+                    //     key = {project.id}
+                    //     name = {project.name}
+                    //     url = {project.url}
+                    //     image = {project.image}
+                    //     github = {project.github}
+                    //     languages = {project.languages}
+                    // />
+                )}
             </Carousel>
         </>
     )
