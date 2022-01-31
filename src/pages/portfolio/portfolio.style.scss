@@ -1,20 +1,32 @@
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h1, h3 {
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
-
 
 h3 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .jumbotron {
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+
+.honda {
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.carouselCap {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

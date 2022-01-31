@@ -17,7 +17,6 @@ const Blog = () => {
         })
       }, [])
 
-
     return (
         <>
             <Navbar />
