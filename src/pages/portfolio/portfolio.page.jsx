@@ -5,10 +5,7 @@ import './portfolio.style.scss'
 import {Jumbotron, Card, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
   
-
 import Navbar from '../../components/navbar/navbar.component';
-// import Work from '../../components/project/work';
-// import Post from '../../components/post/post.component';
 
 
 const Portfolio = () => {
@@ -99,14 +96,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio;
-
-
-
-// div className="carouselCap">
-//                             <a href={repo.html_url} >
-//                             <h3>{repo.name}</h3>
-//                             <p>{repo.description}</p>
-//                             {/* <Carousel.Caption>
-//                             </Carousel.Caption> */}
-//                             </a>
-//                         </div>
