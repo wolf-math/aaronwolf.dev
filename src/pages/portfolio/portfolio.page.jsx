@@ -2,13 +2,10 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'; 
 
 import './portfolio.style.scss'
-import {Jumbotron} from 'react-bootstrap';
+import {Jumbotron, Card, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
   
-
 import Navbar from '../../components/navbar/navbar.component';
-// import Work from '../../components/project/work';
-// import Post from '../../components/post/post.component';
 
 
 const Portfolio = () => {
@@ -70,13 +67,26 @@ const Portfolio = () => {
 
                 {repos.map((repo)=> (
                     <Carousel.Item>
-                        <div className="carouselCap">
-                            <a href={repo.html_url} >
-                            <h3>{repo.name}</h3>
-                            <p>{repo.description}</p>
-                            {/* <Carousel.Caption>
-                            </Carousel.Caption> */}
-                            </a>
+                        <div className='carouselCap'>
+
+                        <Card style={{ width: '66%'}} bg="dark" text="light">
+                        {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
+                        <Card.Body>
+                            <Card.Title>{repo.name}</Card.Title>
+                            <Card.Text>
+                            {repo.description}
+                            </Card.Text>
+                        </Card.Body>
+                        <ListGroup >
+                            <ListGroupItem variant="dark">Language: {repo.language}</ListGroupItem>
+                            <ListGroupItem variant="dark">Created: {repo.created_at}</ListGroupItem>
+                            <ListGroupItem variant="dark">Updated: {repo.updated_at}</ListGroupItem>
+                        </ListGroup>
+                        <Card.Body>
+                            <Card.Link href={repo.html_url}>{repo.html_url}</Card.Link>
+                            {/* <Card.Link href="#">Another Link</Card.Link> */}
+                        </Card.Body>
+                        </Card>
                         </div>
                   </Carousel.Item>
                 ))}
