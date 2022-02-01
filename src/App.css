@@ -1,25 +1,31 @@
 .app {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 h1 {
-    font-family: 'Source Code Pro', monospace;
-    color: white;
+  font-family: 'Source Code Pro', monospace;
+  color: white;
 }
 
-h2, h3 {
-    font-family: 'Source Code Pro', monospace;
-    color: white;
+h2,
+h3 {
+  font-family: 'Source Code Pro', monospace;
+  color: white;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .foot {
-    text-align: center;
-    color: darkgray;
-    margin: 20px;
-    margin-top: 100px;
+  text-align: center;
+  color: darkgray;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 1rem 0 1rem 0;
 }
