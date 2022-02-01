@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'; 
 
 import './portfolio.style.scss'
-import {Jumbotron, Card, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import ProjectCard from '../../components/projectCard/projectCard';
   
