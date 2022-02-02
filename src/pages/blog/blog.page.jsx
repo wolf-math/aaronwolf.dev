@@ -19,24 +19,21 @@ const Blog = () => {
 
     return (
         <>
-            <Navbar />
-
-            <Jumbotron fluid>
-            <Container>
-                
-                <h1 id="head">My Writings from the Practical Dev.</h1>
-   
-            </Container>
-            </Jumbotron>
-            
-            {posts.map(post => <Post key={post.id} 
-                    title={post.title}
-                    cover={post.cover_image}
-                    content={post.description}
-                    url={post.url}
-                    timestamp={post.readable_publish_date}
-                    tags={post.tag_list}
-                />)}
+          <Navbar />
+          <Jumbotron fluid>
+          <Container>
+            <h1 id="head">My Writings from the Practical Dev.</h1>
+          </Container>
+          </Jumbotron>
+          {posts.map(post => (
+            <Post key={post.id} 
+              title={post.title}
+              cover={post.cover_image}
+              content={post.description}
+              url={post.url}
+              timestamp={post.readable_publish_date}
+              tags={post.tag_list}
+            />))}
         </>
     )
 }

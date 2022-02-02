@@ -6,17 +6,23 @@ import './post.style.scss'
 
 const Post = (props) => {
 
+    console.log(props)
+
     return(
         <Roll bottom> 
             <div className="article">
-                <div className="imgcap">
-                    <img src={props.cover} alt="post cover" />
-                </div>
-                <div className="cardbody">
-                    {props.tags.map(tag => <Badge 
-                    variant="secondary"
-                    key={Math.floor(Math.random() * 1000)}
-                    >{tag}</Badge>)}
+              <div className="imgcap">
+                <img src={props.cover} alt="post cover" />
+              </div>
+              <div className="cardbody">
+                  {props.tags.map(tag => (
+                    <Badge 
+                      variant="secondary"
+                      key={tag}
+                    >
+                       {tag}
+                    </Badge>
+                  ))}
                     
                     <h1 className="articletitle">{props.title}</h1>
                     <p className="articlecontent">{props.content} <a href={props.url} target="_blank" rel="noopener noreferrer">Read on</a></p>
