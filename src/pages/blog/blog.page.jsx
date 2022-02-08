@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './blog.style.scss';
 import {Jumbotron, Container} from 'react-bootstrap';
-
+import Loading from '../../components/Loading/Loading'
 import Navbar from '../../components/navbar/navbar.component';
 import Post from '../../components/post/post.component'
 
@@ -25,7 +25,8 @@ const Blog = () => {
             <h1 id="head">My Writings from the Practical Dev.</h1>
           </Container>
           </Jumbotron>
-          {posts.map(post => (
+          {posts.length === 0 ? <Loading/> :
+          posts.map(post => (
             <Post key={post.id} 
               title={post.title}
               cover={post.cover_image}

@@ -51,7 +51,7 @@ export default function ProjectCard (repo) {
     }
 
     return(
-        <Card style={{ width: '80%'}} bg="dark" text="light">
+        <Card style={{ width: '70%'}} bg="dark" text="light">
             <Card.Header>
                 <Card.Img variant="top" src={imageCap} className="cap" />
             </Card.Header>
@@ -68,7 +68,6 @@ export default function ProjectCard (repo) {
             </ListGroup>
             <Card.Body>
             <Card.Link href={repo.repo.html_url}>{repo.repo.html_url}</Card.Link>
-            {/* <Card.Link href="#">Another Link</Card.Link> */}
             </Card.Body>
         </Card>
 )}

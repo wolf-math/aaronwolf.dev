@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios'; 
-
+import axios from 'axios';
 import './portfolio.style.scss'
+import Loading from '../../components/Loading/Loading'
 import {Jumbotron} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import ProjectCard from '../../components/projectCard/projectCard';
@@ -26,6 +26,7 @@ const Portfolio = () => {
           <h1>Portfolio</h1>
           <h3>My GitHub projects.</h3>
         </Jumbotron>
+        {repos.length === 0 ? <Loading/> :
         <Carousel>
           {repos.map((repo) => (
             <Carousel.Item>
@@ -35,6 +36,7 @@ const Portfolio = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+        }
       </>
   )
 }
