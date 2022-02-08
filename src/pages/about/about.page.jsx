@@ -23,8 +23,8 @@ const About = () => (
             </Jumbotron>
 
             <div className="content">
-                <p>I am a full stack developer with a flair for front end. I have experience working in Ruby on Rails, Django, and ReactJS. I enjoy making websites more visually appealing. As a former computer programming teacher in a diverse multicultural public school, I am comfortable understanding and working with people of all types of backgrounds. My favorite tool for teaching computer programming is the <a href="http://www.raspberrypi.org">Raspberry Pi</a>.</p>
-                <p>You can find all of my lesson plans on GitHub. They are in the form of LaTeX code and they are, slowly but surely, being converted into Jupyter Notebooks</p>
+                <p>I am a full stack developer with an affection for front end. Most of my experience is in ReacJS, but I also have background in Python (Django) and Ruby on Rails. As a former computer programming teacher in a diverse multicultural public school, I am comfortable understanding and working with people of all types of backgrounds. My favorite tool for teaching computer programming is the <a href="http://www.raspberrypi.org">Raspberry Pi</a>.</p>
+                <p>I'm a huge fan of open source. Therefore, when possible, all of my projects can be found on GitHub (including my old lesson plans).</p>
                 <p>Are you looking for a developer? I'm for hire! <Link to="/contact">Reach out</Link>.</p>
             </div>            
 
