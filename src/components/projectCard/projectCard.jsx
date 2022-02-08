@@ -10,6 +10,7 @@ import latex from '../../assets/latex.png';
 import python from '../../assets/python.png';
 import swish from '../../assets/swish.png';
 import wolfdev from '../../assets/wolfdev.png';
+import jupyter from '../../assets/jupyter.png'
 
 export default function ProjectCard (repo) {
 
@@ -27,6 +28,9 @@ export default function ProjectCard (repo) {
             break;
         case 'Shell':
             imageCap = bash
+            break
+        case 'Jupyter Notebook':
+            imageCap = jupyter
             break
         default:
             imageCap = logo
