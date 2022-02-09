@@ -10,13 +10,17 @@
 .loading {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-top: 10rem;
   height: 20rem;
+  width: 20rem;
   object-fit: contain;
 
   .loadingLogo {
     height: 15rem;
+    width: 15rem;
     object-fit: contain;
+    width: auto;
     animation-name: spinning;
     animation-duration: 2s;
     animation-iteration-count: infinite;
