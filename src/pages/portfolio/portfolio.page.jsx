@@ -29,7 +29,7 @@ const Portfolio = () => {
         {repos.length === 0 ? <Loading/> :
         <Carousel>
           {repos.map((repo) => (
-            <Carousel.Item>
+            <Carousel.Item key={repo.id}>
               <div className='carouselCap'>
                 <ProjectCard repo={repo} />
               </div>
