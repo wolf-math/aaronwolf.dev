@@ -14,6 +14,11 @@ import jupyter from '../../assets/jupyter.png'
 
 export default function ProjectCard (repo) {
 
+    const formatDate = (dateString) => {
+        const d = new Date(dateString)
+        return d.toDateString()
+    }
+
     let imageCap
 
     switch (repo.repo.language) {
@@ -47,6 +52,7 @@ export default function ProjectCard (repo) {
             imageCap = swish
             break
         default:
+            // I could refernce the switch case above, but this will do for now
             console.log('done')
     }
 
@@ -62,9 +68,9 @@ export default function ProjectCard (repo) {
                 </Card.Text>
             </Card.Body>
             <ListGroup >
-                <ListGroupItem variant="dark">Language: {repo.repo.language}</ListGroupItem>
-                <ListGroupItem variant="dark">Created: {repo.repo.created_at}</ListGroupItem>
-                <ListGroupItem variant="dark">Updated: {repo.repo.updated_at}</ListGroupItem>
+                <ListGroupItem variant="dark"><b>Language:</b> {repo.repo.language}</ListGroupItem>
+                <ListGroupItem variant="dark"><b>Created:</b> {formatDate(repo.repo.created_at)}</ListGroupItem>
+                <ListGroupItem variant="dark"><b>Updated:</b> {formatDate(repo.repo.updated_at)}</ListGroupItem>
             </ListGroup>
             <Card.Body>
             <Card.Link href={repo.repo.html_url}>{repo.repo.html_url}</Card.Link>
