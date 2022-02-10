@@ -9,15 +9,15 @@ import Post from '../../components/post/post.component'
 
 const Blog = () => {
 
-    const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([])
 
-    useEffect(() => {
-      setTimeout(function(){
-        axios.get("https://dev.to/api/articles?username=wolfmath").then((res)=>{
-          setPosts(res.data);
-        })
-      }, 2000);
-      }, [])
+  useEffect(() => {
+    setTimeout(function(){
+      axios.get("https://dev.to/api/articles?username=wolfmath").then((res)=>{
+        setPosts(res.data);
+      })
+    }, 2000);
+  }, [])
 
     return (
         <>
