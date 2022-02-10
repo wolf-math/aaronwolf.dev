@@ -19,7 +19,7 @@ const Post = (props) => {
           </Badge>
         ))}
           <h1 className="articletitle">{props.title}</h1>
-          <p className="articlecontent">{props.content} <a href={props.url} target="_blank" rel="noopener noreferrer">Read on</a></p>
+          <p className="articlecontent">{props.description} <a href={props.url} target="_blank" rel="noopener noreferrer">Read on</a></p>
           <p className="timestamp">{props.timestamp}</p>                
         </div>
     </div>

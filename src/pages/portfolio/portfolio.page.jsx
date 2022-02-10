@@ -24,11 +24,11 @@ const Portfolio = () => {
   return(
     <>
       <Navbar />
-        <Jumbotron>
-          <h1>Portfolio</h1>
-          <h3>My GitHub projects.</h3>
-        </Jumbotron>
-        {repos.length === 0 ? <Loading/> :
+      <Jumbotron>
+        <h1>Portfolio</h1>
+        <h3>My GitHub projects.</h3>
+      </Jumbotron>
+      {repos.length === 0 ? <Loading/> :
         <Carousel>
           {repos.map((repo) => (
             <Carousel.Item key={repo.id}>
@@ -38,8 +38,8 @@ const Portfolio = () => {
             </Carousel.Item>
           ))}
         </Carousel>
-        }
-      </>
+      }
+    </>
   )
 }
 
