@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-import './blog.style.scss';
+// import './blog.style.scss';
 import {Jumbotron, Container} from 'react-bootstrap';
 import Loading from '../../components/Loading/Loading'
 import Navbar from '../../components/navbar/navbar.component';
