@@ -22,10 +22,7 @@ const Navbar = () => (
             </Link>
             <Link className='option' to='/contact'>
                 Contact
-            </Link>
-            {/* <Link className='option' to='/teacher'>
-                Teacher Site
-            </Link> */}            
+            </Link>        
         </div>
 
         <div className="socialmedia">
