@@ -22,6 +22,12 @@ const HomePage = () => {
         {name: "contact", logo: pixel, text: 'Contact.'}
     ]
 
+    const links = [
+        {name: "dev.to", location: 'https://dev.to/wolfmath', icon: <FaDev className="icon" />},
+        {name: 'linkedin', location: 'https://www.linkedin.com/in/wolf-math/', icon:<FaLinkedin className="icon" />  },
+        {name: 'github', location: 'https://github.com/wolf-math', icon: <FaGithub className="icon" /> },
+    ]
+
 
     return (
     <div className="home-background">
@@ -51,21 +57,15 @@ const HomePage = () => {
             </div>
 
             <div id="icons">
-                <a href="https://dev.to/wolfmath" 
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <FaDev className="icon" />
-                </a>
-                <a href="https://www.linkedin.com/in/wolf-math/" 
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <FaLinkedin className="icon" />
-                </a>
-                <a href="https://github.com/wolf-math" 
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    <FaGithub className="icon" />
-                </a>
+                {links.map(link => (
+                    <a href={link.location}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={link.name}
+                    >
+                        {link.icon}
+                    </a>
+                ))}
                 <Link to="/contact">
                     <FaEnvelope className="icon" />
                 </Link>
