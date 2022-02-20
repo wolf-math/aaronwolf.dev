@@ -13,8 +13,17 @@ import robot_wolf from '../../assets/robot_logo.png';
 import hardhat from '../../assets/hardhat_logo.png';
 
 
-const HomePage = () => (
+const HomePage = () => {
 
+    const pages = [
+        {name: "about", logo: robot_wolf, text: 'About.'},
+        {name: "portfolio", logo: hardhat, text: 'Portfolio'},
+        {name: "blog", logo: glasses, text: 'Blog.'},
+        {name: "contact", logo: pixel, text: 'Contact.'}
+    ]
+
+
+    return (
     <div className="home-background">
         <div className='homepage'>
             <div id="greeting">
@@ -33,22 +42,12 @@ const HomePage = () => (
             </div>
 
             <div id="pages">       
-                <a className="page" id="about" href='/about'>
-                    <img className='linkLogo' src={robot_wolf} alt="About" />
-                    <h3 className="description typewriter">About.</h3>
-                </a>
-                <a className="page" id="portfolio" href='/portfolio'>
-                    <img className='linkLogo' src={hardhat} alt="Portfolio" />
-                    <h3 className="description typewriter">Portfolio.</h3>
-                </a>
-                <a className="page" id="blog" href='/blog'>
-                    <img className='linkLogo' src={glasses} alt="Blog" />
-                    <h3 className="description typewriter">Blog.</h3>
-                </a>
-                <a className="page" id="contact" href='/contact'>
-                    <img className='linkLogo' src={pixel} alt="Contact" />
-                    <h3 className="description typewriter">Contact.</h3>
-                </a>
+                {pages.map((page, i) => (
+                    <Link className="page" id={page.name} href={`/${page.name}`} key={i}>
+                        <img className='linkLogo' src={page.logo} alt={page.name} />
+                        <h3 className="description typewriter">{page.text}</h3>
+                    </Link>
+                ))}
             </div>
 
             <div id="icons">
@@ -73,6 +72,7 @@ const HomePage = () => (
             </div>
         </div>
     </div>
-)
+    )
+}
 
 export default HomePage;
