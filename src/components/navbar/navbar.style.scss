@@ -1,28 +1,33 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-    
-    .option {
-        font-family: "Source Code Pro";
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        font-size: large;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
 
-        &:hover {
-            text-shadow: 2px 2px 2px grey;
-        }
-    }
-}
-
-.faicon {
+  .option {
+    font-family: 'Source Code Pro';
     color: white;
+    text-decoration: none;
     padding: 10px;
-    font-size: 3em;
+    font-size: 1rem;
 
     &:hover {
-        filter: drop-shadow(2px 2px 2px grey);
+      text-shadow: 2px 2px 2px grey;
     }
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.navIcon {
+  color: white;
+  padding: 10px;
+  font-size: 2em;
+
+  &:hover {
+    filter: drop-shadow(2px 2px 2px grey);
+  }
 }

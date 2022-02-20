@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { FaDev, FaLinkedin, FaGithub } from 'react-icons/fa';
+import {links, pages} from '../../links'
 
 import './navbar.style.scss';
 
@@ -11,36 +10,24 @@ const Navbar = () => (
             <Link className='option' to='/'>
                 Home
             </Link>
-            <Link className='option' to='/about'>
-                About
-            </Link>
-            <Link className='option' to='/portfolio'>
-                Portfolio
-            </Link>
-            <Link className='option' to='/blog'>
-                Blog
-            </Link>
-            <Link className='option' to='/contact'>
-                Contact
-            </Link>        
+            {pages.map(page =>  (
+                <Link className='option' to={`/${page.name}`} key={page.name}>
+                    {page.name}
+                </Link>
+            ))}
         </div>
 
-        <div className="socialmedia">
-            <a href="https://dev.to/wolfmath" 
-                target="_blank"
-                rel="noopener noreferrer">
-                <FaDev className="faicon" />
-            </a>
-            <a href="https://www.linkedin.com/in/wolf-math/" 
-                target="_blank"
-                rel="noopener noreferrer">
-                <FaLinkedin className="faicon" />
-            </a>
-            <a href="https://github.com/wolf-math" 
-                target="_blank"
-                rel="noopener noreferrer">
-                <FaGithub className="faicon" />
-            </a>
+        <div className="socialMedia">
+            {links.map(link => (
+                <a href={link.location}
+                  key="link.name"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                      <div className="navIcon">
+                        {link.icon}
+                      </div>
+                  </a>
+            ))}
         </div>
     </div>
 );

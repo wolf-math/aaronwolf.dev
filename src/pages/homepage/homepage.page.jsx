@@ -1,32 +1,13 @@
 import React from 'react';
+import {links, pages} from '../../links'
 import { Link } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
-
-import { FaAngleDoubleDown, FaDev, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-
+import { FaAngleDoubleDown, FaEnvelope } from 'react-icons/fa';
 import './homepage.style.scss';
-
 import logo from '../../assets/wolf-logo_D5.png';
-import glasses from '../../assets/wolf-logo_D6.png';
-import pixel from '../../assets/logo_pixel_large.png'
-import robot_wolf from '../../assets/robot_logo.png';
-import hardhat from '../../assets/hardhat_logo.png';
 
 
 const HomePage = () => {
-
-    const pages = [
-        {name: "about", logo: robot_wolf, text: 'About.'},
-        {name: "portfolio", logo: hardhat, text: 'Portfolio'},
-        {name: "blog", logo: glasses, text: 'Blog.'},
-        {name: "contact", logo: pixel, text: 'Contact.'}
-    ]
-
-    const links = [
-        {name: "dev.to", location: 'https://dev.to/wolfmath', icon: <FaDev className="icon" />},
-        {name: 'linkedin', location: 'https://www.linkedin.com/in/wolf-math/', icon:<FaLinkedin className="icon" />  },
-        {name: 'github', location: 'https://github.com/wolf-math', icon: <FaGithub className="icon" /> },
-    ]
 
     return (
         <div className="home-background">
@@ -54,7 +35,6 @@ const HomePage = () => {
                         </a>
                     ))}
                 </div>
-
                 <div id="icons">
                     {links.map(link => (
                         <a href={link.location}
@@ -62,12 +42,16 @@ const HomePage = () => {
                         rel="noopener noreferrer"
                         key={link.name}
                         >
+                        <div className="icon">
                             {link.icon}
+                        </div>
                         </a>
                     ))}
-                    <Link to="/contact">
-                        <FaEnvelope className="icon" />
-                    </Link>
+                    <div className="icon">
+                        <Link to="/contact">
+                            <FaEnvelope className="icon" />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
