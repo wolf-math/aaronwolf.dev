@@ -46,11 +46,11 @@ const HomePage = () => {
                         </div>
                         </a>
                     ))}
+                    <Link to="/contact">
                     <div className="icon">
-                        <Link to="/contact">
-                            <FaEnvelope className="icon" />
-                        </Link>
+                            <FaEnvelope  />
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>
