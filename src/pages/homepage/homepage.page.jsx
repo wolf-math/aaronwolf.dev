@@ -12,9 +12,7 @@ import pixel from '../../assets/logo_pixel_large.png'
 import robot_wolf from '../../assets/robot_logo.png';
 import hardhat from '../../assets/hardhat_logo.png';
 
-
 const HomePage = () => (
-
     <div className="home-background">
         <div className='homepage'>
             <div id="greeting">
