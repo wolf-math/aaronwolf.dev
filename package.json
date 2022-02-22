@@ -23,7 +23,10 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
+<<<<<<< HEAD
     "react-scroll": "^1.8.1",
+=======
+>>>>>>> 96476016b086138b1dbd45e55f2b081d013d2c19
     "sass": "^1.49.7"
   },
   "scripts": {
