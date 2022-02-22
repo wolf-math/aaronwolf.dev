@@ -1,12 +1,15 @@
 import React from 'react';
 import {links, pages} from '../../links'
 import { Link } from 'react-router-dom';
-import { Link as Scroll } from 'react-scroll';
 import { FaAngleDoubleDown, FaEnvelope } from 'react-icons/fa';
 import './homepage.style.scss';
 import logo from '../../assets/wolf-logo_D5.png';
 
 const HomePage = () => {
+    
+    const scroll = () => {
+        pages.current.scrollIntoView({ behavior: "smooth" });
+    }
 
     return (
         <div className="home-background">
@@ -21,12 +24,10 @@ const HomePage = () => {
                             Nerd.</h3>
                         </div>
                     </div>
-                    <Scroll activeClass="active" to="pages" spy={true} smooth={true}>
-                        <FaAngleDoubleDown id="more" /> 
-                    </Scroll>
+                    <FaAngleDoubleDown id="more" onClick={scroll} /> 
                 </div>
 
-                <div id="pages">
+                <div id="pages" ref={pages}>
                     {pages.map((page, i) => (
                         <a className="page" id={page.name} href={`/${page.name}`} key={i}>
                             <img className='linkLogo' src={page.logo} alt={page.name} />
