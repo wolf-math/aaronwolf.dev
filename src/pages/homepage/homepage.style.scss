@@ -99,7 +99,7 @@
   #pages {
     display: grid;
     width: 95%;
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
     padding-top: 35vh;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-column-gap: 20px;
@@ -134,9 +134,9 @@
   }
 
   #icons {
-    padding-bottom: 25vh;
-    display: flex;
-    flex-direction: row;
+    padding-bottom: 10vh;
+    // display: flex;
+    // flex-direction: row;
     // justify-content: space-evenly;
     font-size: 5rem;
 

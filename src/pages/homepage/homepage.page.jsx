@@ -6,7 +6,6 @@ import { FaAngleDoubleDown, FaEnvelope } from 'react-icons/fa';
 import './homepage.style.scss';
 import logo from '../../assets/wolf-logo_D5.png';
 
-
 const HomePage = () => {
 
     return (
